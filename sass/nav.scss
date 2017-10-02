@@ -1,0 +1,22 @@
+.nav-desktop {
+  width: 100%;
+  padding: 20px 80px;
+  ul {
+    text-align: justify;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline-block;
+      line-height: 100%;
+      a {
+        text-transform: uppercase;
+      }
+    }
+  }
+  ul:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+  }
+}
