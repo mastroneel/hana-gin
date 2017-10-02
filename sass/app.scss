@@ -1,6 +1,7 @@
 @import '../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
 
 @import 'variables';
+@import 'base-styles';
 @import 'nav';
 @import 'hero';
 @import 'our-story';
@@ -10,26 +11,3 @@
 @import 'location';
 @import 'contact';
 @import 'footer';
-
-body {
-  color: $green;
-
-}
-
-a {
-  color: $green;
-}
-
-h2 {
-  text-transform: uppercase;
-}
-
-hr {
-  border-color: $red;
-  border-width: 3px;
-  margin-top: -8px;
-}
-
-.title {
-  padding-top: 60px;
-}

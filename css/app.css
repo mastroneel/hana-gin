@@ -5806,6 +5806,23 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+body {
+  color: #1EB355; }
+
+a {
+  color: #1EB355; }
+
+h2 {
+  text-transform: uppercase; }
+
+hr {
+  border-color: #D61F35;
+  border-width: 3px;
+  margin-top: -8px; }
+
+.title {
+  padding-top: 60px; }
+
 .nav-desktop {
   width: 100%;
   padding: 20px 80px; }
@@ -5859,9 +5876,58 @@ button.close {
 
 .our-craft {
   text-align: center;
-  height: 100vh; }
+  padding-bottom: 80px; }
   .our-craft hr {
     width: 35em; }
+  .our-craft .green-line {
+    width: 75%;
+    border-color: #1EB355;
+    border-width: 2px;
+    margin-top: 30px; }
+  .our-craft ul {
+    list-style: none;
+    text-align: justify;
+    line-height: 0;
+    margin: 0 auto;
+    padding: 0;
+    width: 80%; }
+    .our-craft ul h5 {
+      color: #D61F35;
+      font-weight: bold; }
+    .our-craft ul img {
+      height: 70px;
+      width: 70px;
+      border-radius: 50%; }
+    .our-craft ul li {
+      display: inline-block;
+      line-height: 100%;
+      max-width: 20%; }
+      .our-craft ul li .circle {
+        height: 40px;
+        width: 40px;
+        background-color: #1EB355;
+        border-radius: 50%; }
+      .our-craft ul li p, .our-craft ul li h5 {
+        text-align: center; }
+      .our-craft ul li p {
+        color: #000;
+        line-height: 1.4; }
+  .our-craft ul:after {
+    content: '';
+    display: inline-block;
+    width: 100%; }
+  .our-craft .first-list {
+    margin-top: 40px;
+    width: 82%; }
+    .our-craft .first-list img {
+      margin-top: -50px; }
+  .our-craft .circle-list {
+    margin-top: -40px; }
+  .our-craft .final-list {
+    width: 97%;
+    margin-top: 20px; }
+    .our-craft .final-list li {
+      vertical-align: top; }
 
 .awards {
   height: 100vh;
@@ -5898,22 +5964,5 @@ button.close {
   height: 100vh; }
   .contact hr {
     width: 14em; }
-
-body {
-  color: #1EB355; }
-
-a {
-  color: #1EB355; }
-
-h2 {
-  text-transform: uppercase; }
-
-hr {
-  border-color: #D61F35;
-  border-width: 3px;
-  margin-top: -8px; }
-
-.title {
-  padding-top: 60px; }
 
 /*# sourceMappingURL=app.css.map */

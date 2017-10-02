@@ -1,0 +1,21 @@
+body {
+  color: $green;
+}
+
+a {
+  color: $green;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+hr {
+  border-color: $red;
+  border-width: 3px;
+  margin-top: -8px;
+}
+
+.title {
+  padding-top: 60px;
+}
