@@ -1,7 +1,128 @@
 .cocktails {
-  height: 100vh;
+  min-height: 100vh;
+  padding-bottom: 60px;
   text-align: center;
   hr {
     width: 12em;
+    margin-bottom: 20px;
+  }
+  .cocktail-pic-1,
+  .cocktail-pic-2,
+  .cocktail-pic-3,
+  .cocktail-pic-4,
+  .cocktail-pic-5,
+  .cocktail-pic-6,
+  .cocktail-pic-7,
+  .cocktail-pic-8,
+  .cocktail-pic-9,
+  .cocktail-pic-10 {
+    background-image: url('../img/filler-cocktail.jpeg');
+    height: 150px;
+    width: 150px;
+    background-size: cover;
+    margin: 20px auto;
+    .image-overlay {
+      opacity: 0;
+      background-color: rgba(30, 179, 85, 0.8);
+      color: $white;
+      width: 100%;
+      height: 100%;
+      padding-top: 40%;
+      transition: 0.5s;
+      h6 {
+        font-size: 1.2em;
+      }
+    }
+    &:hover {
+      .image-overlay {
+        opacity: 1;
+        transition: 0.5s;
+      }
+    }
+  }
+  .cocktail-row {
+    margin-top: 20px;
+    padding: 0 11%;
+  }
+}
+
+@media (max-width: 1247px) {
+  .cocktails {
+    .cocktail-row {
+      padding: 0 5%;
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  .cocktails {
+    .cocktail-row {
+      padding: 0;
+    }
+    .cocktail-pic-1,
+    .cocktail-pic-2,
+    .cocktail-pic-3,
+    .cocktail-pic-4,
+    .cocktail-pic-5,
+    .cocktail-pic-6,
+    .cocktail-pic-7,
+    .cocktail-pic-8,
+    .cocktail-pic-9,
+    .cocktail-pic-10 {
+      width: 120px;
+      height: 120px;
+      .image-overlay {
+        padding-top: 35%;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .cocktails {
+    .cocktail-row {
+      padding: 0;
+    }
+    .cocktail-pic-1,
+    .cocktail-pic-2,
+    .cocktail-pic-3,
+    .cocktail-pic-4,
+    .cocktail-pic-5,
+    .cocktail-pic-6,
+    .cocktail-pic-7,
+    .cocktail-pic-8,
+    .cocktail-pic-9,
+    .cocktail-pic-10 {
+      width: 180px;
+      height: 180px;
+      .image-overlay {
+        padding-top: 35%;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 435px) {
+  .cocktails {
+    .cocktail-row {
+      padding: 0;
+    }
+    .cocktail-pic-1,
+    .cocktail-pic-2,
+    .cocktail-pic-3,
+    .cocktail-pic-4,
+    .cocktail-pic-5,
+    .cocktail-pic-6,
+    .cocktail-pic-7,
+    .cocktail-pic-8,
+    .cocktail-pic-9,
+    .cocktail-pic-10 {
+      width: 150px;
+      height: 150px;
+      .image-overlay {
+        padding-top: 35%;
+      }
+    }
   }
 }

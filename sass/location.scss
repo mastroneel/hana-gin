@@ -16,4 +16,32 @@
   hr {
     width: 28em;
   }
+  h6, p {
+    color: $white;
+  }
+  h6 {
+    font-size: 1.5em;
+  }
+  p {
+    text-align: left;
+    margin-top: 45px;
+    span {
+      font-weight: bold;
+    }
+  }
+  .circle {
+    height: 1em;
+    width: 1em;
+    background-color: $red;
+    border-radius: 50%;
+    margin-bottom: -62px;
+    margin-left: -20px;
+  }
+  .addresses {
+    width: 40%;
+    .col-md-6 {
+      padding-left: 80px;
+      margin-top: 40px;
+    }
+  }
 }
