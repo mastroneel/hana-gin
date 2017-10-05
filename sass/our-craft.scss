@@ -1,4 +1,117 @@
-.our-craft {
+// **************
+// Mobile version
+// Vertical line
+// **************
+
+.our-craft-mobile {
+  text-align: center;
+  padding-bottom: 60px;
+  .title {
+    font-size: 1.5em;
+  }
+  hr {
+    width: 24em;
+  }
+  .vertical-line {
+    height: 900px;
+    width: 3px;
+    background-color: $green;
+    display: block;
+    margin: 0 auto -1080px auto;
+  }
+  ul {
+    list-style: none;
+    margin: 0 auto;
+    img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+    h5 {
+      color: $red;
+      font-weight: bold;
+    }
+    p {
+      color: $black;
+      font-size: 0.9em;
+    }
+  }
+  .circle-list {
+    display: table;
+    margin: 80px auto;
+    li {
+      .circle {
+        height: 40px;
+        width: 40px;
+        background-color: $green;
+        border-radius: 50%;
+        margin-top: 180px;
+      }
+    }
+  }
+  .first-list {
+    margin-top: 65px;
+    width: 90%;
+    float: right;
+    li {
+      margin-right: -50px;
+      img {
+        margin-right: -200px;
+      }
+    }
+    .mash {
+      margin-top: 130px;
+    }
+    .vacuum-image {
+      margin-top: 135px;
+    }
+    .mastery {
+      margin-top: 130px;
+    }
+    .bottling-image {
+      margin-top: 130px;
+    }
+  }
+  .final-list {
+    margin-left: -60px;
+    margin-top: 20px;
+    width: 95%;
+    li {
+      img {
+        margin-left: -140px;
+      }
+    }
+    .mash-image {
+      margin-top: 80px;
+    }
+    .vacuum {
+      margin-top: 60px;
+    }
+    .mastery-image {
+      margin-top: 55px;
+    }
+    .bottling {
+      margin-top: 100px;
+    }
+  }
+}
+
+// *************
+// Media queries
+// *************
+
+@media (min-width: 805px) {
+  .our-craft-mobile {
+    display: none;
+  }
+}
+
+
+// ***************
+// Desktop version
+// Horizontal line
+// ***************
+.our-craft-desktop {
   text-align: center;
   padding-bottom: 80px;
   hr {
@@ -66,5 +179,39 @@
     li {
       vertical-align: top;
     }
+  }
+}
+
+
+// *************
+// Media queries
+// *************
+
+@media (max-width: 1135px) {
+  .our-craft-desktop {
+    .first-list {
+      width: 83%;
+    }
+  }
+}
+
+@media (max-width: 891px) {
+  .our-craft-desktop {
+    ul {
+      li {
+        p {
+          font-size: 0.9em;
+        }
+      }
+    }
+    .first-list {
+      width: 84%;
+    }
+  }
+}
+
+@media (max-width: 805px) {
+  .our-craft-desktop {
+    display: none;
   }
 }

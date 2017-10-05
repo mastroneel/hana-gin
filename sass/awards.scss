@@ -26,6 +26,16 @@
   }
 }
 
+// *************
+// Media queries
+// *************
+
+@media (max-width: 992px) {
+  .awards {
+    background-attachment: scroll;
+  }
+}
+
 @media (max-width: 767px) {
   .awards {
     .awards-row {

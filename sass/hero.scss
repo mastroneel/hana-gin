@@ -1,10 +1,32 @@
 .hero {
-  height: 100vh;
+  min-height: 85vh;
   text-align: left;
   padding: 8%;
+  background-image: url('../img/hero-pic-1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   h1 {
     font-size: 5em;
     line-height: 1.7;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 1099px) {
+  .hero {
+    padding-top: 150px;
+    h1 {
+      font-size: 4em;
+    }
+  }
+}
+
+@media (max-width: 903px) {
+  .hero {
+    padding-left: 5%;
+    h1 {
+      font-size: 3.5em;
+    }
   }
 }

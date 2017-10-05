@@ -1,6 +1,7 @@
 .our-story {
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
+  padding-bottom: 60px;
   background:
       -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
       url("../img/filler-background.jpg");
@@ -28,6 +29,41 @@
     span {
       color: $green;
       text-transform: uppercase;
+    }
+  }
+}
+
+
+// *************
+// Media queries
+// *************
+
+@media (max-width: 1099px) {
+  .our-story {
+    p {
+      width: 65%;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .our-story {
+    background-attachment: scroll;
+  }
+}
+
+@media (max-width: 767px) {
+  .our-story {
+    p {
+      width: 75%;
+    }
+  }
+}
+
+@media (max-width: 535px) {
+  .our-story {
+    p {
+      width: 95%;
     }
   }
 }

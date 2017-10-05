@@ -45,3 +45,13 @@
     }
   }
 }
+
+// *************
+// Media queries
+// *************
+
+@media (max-width: 992px) {
+  .location {
+    background-attachment: scroll;
+  }
+}

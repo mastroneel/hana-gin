@@ -1,5 +1,10 @@
 @import '../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
 
+@font-face {
+    font-family: AvenirNext;
+    src: url("../fonts/AvenirNextLTPro-Regular.otf") format("opentype");
+}
+
 @import 'variables';
 @import 'base-styles';
 @import 'nav';
