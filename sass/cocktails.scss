@@ -1,6 +1,6 @@
 .cocktails {
   min-height: 100vh;
-  padding-bottom: 60px;
+  padding-bottom: 80px;
   text-align: center;
   hr {
     width: 12em;
@@ -64,9 +64,8 @@
     background-image: url('../img/white-peach-refresher.jpg');
   }
   .cocktail-row {
-    margin-top: 20px;
     width: 75%;
-    margin: 0 auto;
+    margin: 20px auto 70px auto;
   }
 }
 

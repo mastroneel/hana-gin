@@ -5839,6 +5839,13 @@ hr {
     text-transform: uppercase;
     letter-spacing: 1px; }
 
+.button {
+  text-transform: uppercase;
+  border: 3px solid #D61F35;
+  border-radius: 3px;
+  padding: 20px 40px;
+  background: transparent; }
+
 .nav-desktop {
   width: 100%;
   padding: 20px 80px; }
@@ -5963,28 +5970,158 @@ hr {
       .our-craft-mobile .first-list li img {
         margin-right: -200px; }
     .our-craft-mobile .first-list .mash {
+      height: 220px;
       margin-top: 130px; }
     .our-craft-mobile .first-list .vacuum-image {
-      margin-top: 135px; }
+      margin-top: 0px; }
     .our-craft-mobile .first-list .mastery {
+      height: 220px;
       margin-top: 130px; }
     .our-craft-mobile .first-list .bottling-image {
-      margin-top: 130px; }
+      margin-top: 10px; }
   .our-craft-mobile .final-list {
     margin-left: -60px;
     margin-top: 20px;
     width: 95%; }
     .our-craft-mobile .final-list li img {
       margin-left: -140px; }
+    .our-craft-mobile .final-list .ingredients {
+      height: 255px; }
     .our-craft-mobile .final-list .mash-image {
-      margin-top: 80px; }
+      margin-top: 0px; }
     .our-craft-mobile .final-list .vacuum {
-      margin-top: 60px; }
+      margin-top: 60px;
+      height: 255px; }
     .our-craft-mobile .final-list .mastery-image {
       margin-top: 55px; }
     .our-craft-mobile .final-list .bottling {
+      height: 255px;
       margin-top: 100px; }
 
+@media (max-width: 700px) {
+  .our-craft-mobile .first-list {
+    width: 100%; }
+    .our-craft-mobile .first-list li img {
+      margin-right: -180px; }
+  .our-craft-mobile .final-list {
+    width: 110%; }
+    .our-craft-mobile .final-list li img {
+      margin-left: -140px; } }
+@media (max-width: 660px) {
+  .our-craft-mobile .final-list {
+    width: 120%; }
+    .our-craft-mobile .final-list li img {
+      margin-left: -130px; } }
+@media (max-width: 605px) {
+  .our-craft-mobile .title h2 {
+    font-size: 1em; }
+  .our-craft-mobile hr {
+    width: 17em; }
+  .our-craft-mobile .first-list {
+    width: 120%; }
+    .our-craft-mobile .first-list li {
+      margin-right: -40px; }
+      .our-craft-mobile .first-list li img {
+        margin-right: -120px; }
+  .our-craft-mobile .circle-list {
+    margin-left: -20px; }
+  .our-craft-mobile .final-list {
+    width: 110%; }
+    .our-craft-mobile .final-list li {
+      margin-left: 5px; }
+      .our-craft-mobile .final-list li p, .our-craft-mobile .final-list li h5 {
+        width: 120%; }
+      .our-craft-mobile .final-list li img {
+        margin-left: -80px; } }
+@media (max-width: 523px) {
+  .our-craft-mobile ul li p {
+    font-size: 0.8em; }
+  .our-craft-mobile .final-list li img {
+    margin-left: -30px; }
+  .our-craft-mobile .final-list .vacuum {
+    margin-top: 90px;
+    height: 220px; } }
+@media (max-width: 470px) {
+  .our-craft-mobile .first-list {
+    width: 120%; }
+    .our-craft-mobile .first-list li {
+      margin-right: -30px; }
+      .our-craft-mobile .first-list li img {
+        margin-right: -70px; }
+  .our-craft-mobile .circle-list {
+    margin-left: -30px; }
+  .our-craft-mobile .final-list {
+    width: 120%; }
+    .our-craft-mobile .final-list li {
+      margin-left: 5px; }
+      .our-craft-mobile .final-list li p, .our-craft-mobile .final-list li h5 {
+        width: 120%; }
+      .our-craft-mobile .final-list li img {
+        margin-left: -50px; } }
+@media (max-width: 440px) {
+  .our-craft-mobile ul li h5, .our-craft-mobile ul li p {
+    font-size: 0.75em; }
+  .our-craft-mobile .first-list {
+    width: 120%; }
+    .our-craft-mobile .first-list li {
+      margin-right: -30px; }
+      .our-craft-mobile .first-list li img {
+        margin-right: -70px; }
+  .our-craft-mobile .circle-list {
+    margin-left: -30px; }
+  .our-craft-mobile .final-list {
+    width: 120%; }
+    .our-craft-mobile .final-list li {
+      margin-left: 5px; }
+      .our-craft-mobile .final-list li p, .our-craft-mobile .final-list li h5 {
+        width: 120%; }
+      .our-craft-mobile .final-list li img {
+        margin-left: -30px; } }
+@media (max-width: 416px) {
+  .our-craft-mobile .title {
+    font-size: 1.1em; }
+  .our-craft-mobile hr {
+    width: 18em; }
+  .our-craft-mobile ul li h5, .our-craft-mobile ul li p {
+    font-size: 0.75em; }
+  .our-craft-mobile .first-list {
+    width: 120%; }
+    .our-craft-mobile .first-list li {
+      margin-right: -10px; }
+      .our-craft-mobile .first-list li img {
+        margin-right: -50px; }
+  .our-craft-mobile .circle-list {
+    margin-left: -40px; }
+  .our-craft-mobile .final-list {
+    width: 130%; }
+    .our-craft-mobile .final-list li {
+      margin-left: 5px; }
+      .our-craft-mobile .final-list li p, .our-craft-mobile .final-list li h5 {
+        width: 120%; }
+      .our-craft-mobile .final-list li img {
+        margin-left: -20px; } }
+@media (max-width: 377px) {
+  .our-craft-mobile ul li h5, .our-craft-mobile ul li p {
+    font-size: 0.75em; }
+  .our-craft-mobile .first-list {
+    width: 120%; }
+    .our-craft-mobile .first-list li {
+      margin-right: 0px; }
+      .our-craft-mobile .first-list li img {
+        margin-right: -20px; }
+  .our-craft-mobile .circle-list {
+    margin-left: -50px; }
+  .our-craft-mobile .final-list {
+    width: 130%; }
+    .our-craft-mobile .final-list li {
+      margin-left: -5px; }
+      .our-craft-mobile .final-list li p, .our-craft-mobile .final-list li h5 {
+        width: 120%; }
+      .our-craft-mobile .final-list li img {
+        margin-left: 0px; }
+    .our-craft-mobile .final-list .vacuum p {
+      font-size: 0.7em;
+      width: 130%; } }
 @media (min-width: 805px) {
   .our-craft-mobile {
     display: none; } }
@@ -6058,16 +6195,17 @@ hr {
   padding-bottom: 80px;
   min-height: 100vh;
   text-align: center;
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/filler-background.jpg");
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/filler-background.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/filler-background.jpg");
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/awards-background.jpg");
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/awards-background.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/awards-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed; }
   .awards hr {
     width: 10em; }
   .awards .awards-row {
-    margin-top: 130px; }
+    margin-top: 130px;
+    margin-bottom: 180px; }
     .awards .awards-row img {
       width: 80px;
       margin-top: 40px; }
@@ -6080,7 +6218,7 @@ hr {
     margin-top: 40px; } }
 .cocktails {
   min-height: 100vh;
-  padding-bottom: 60px;
+  padding-bottom: 80px;
   text-align: center; }
   .cocktails hr {
     width: 12em;
@@ -6156,9 +6294,8 @@ hr {
   .cocktails .cocktail-pic-8 {
     background-image: url("../img/white-peach-refresher.jpg"); }
   .cocktails .cocktail-row {
-    margin-top: 20px;
     width: 75%;
-    margin: 0 auto; }
+    margin: 20px auto 70px auto; }
 
 @media (max-width: 1247px) {
   .cocktails .cocktail-row {
@@ -6242,9 +6379,9 @@ hr {
 .location {
   height: 100vh;
   text-align: center;
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/filler-background.jpg");
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/filler-background.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/filler-background.jpg");
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/find-us-background.jpg");
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/find-us-background.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/find-us-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed; }
@@ -6304,5 +6441,19 @@ hr {
       border-radius: 3px;
       height: 35px;
       width: 100%; }
+  .contact .button-container {
+    text-align: center;
+    margin-top: 30px; }
+    .contact .button-container .button {
+      padding: 10px 20px; }
+
+footer {
+  text-align: center; }
+  footer img {
+    max-width: 100px;
+    margin-bottom: 10px; }
+  footer p {
+    font-size: 0.8em;
+    line-height: 0.7; }
 
 /*# sourceMappingURL=app.css.map */
