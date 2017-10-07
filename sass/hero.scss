@@ -11,8 +11,133 @@
     letter-spacing: 2px;
     font-weight: bold;
   }
+  .button {
+    padding: 10px;
+    float: left;
+    border: 2px solid $green;
+  }
+  .modal {
+    text-align: center;
+    .modal-body {
+      padding: 20px;
+      background-color: $black;
+      .modal-inner {
+        border: 3px solid $green;
+        padding: 40px;
+        img {
+          max-width: 250px;
+          margin-top: -60px;
+        }
+        h3, h5 {
+          color: $white;
+        }
+        h3 {
+          text-transform: uppercase;
+          font-size: 5em;
+        }
+        h5 {
+          font-size: 2em;
+        }
+        form {
+          input {
+            border: 3px solid $green;
+            background: transparent;
+            height: 60px;
+            padding: 15px 5px 5px 5px;
+            margin: 20px 5px 10px 5px;
+            color: $red;
+            font-size: 48px;
+            text-align: center;
+            &:focus {
+              outline: none;
+            }
+          }
+
+          label {
+            color: $white;
+
+          }
+
+          input[type=checkbox] {
+              position: relative;
+              text-align: center;
+              // -moz-appearance:none;
+              // -webkit-appearance:none;
+              // -o-appearance:none;
+          }
+
+          @supports (zoom:2) {
+          	input[type=checkbox]{
+          	zoom: 3;
+            margin-top: -20px;
+          	}
+          }
+
+          @supports not (zoom:2) {
+          	input[type=checkbox]{
+          		transform: scale(3);
+          	}
+          }
+          label{
+            /* fix vertical align issues */
+          	display: inline-block;
+          	vertical-align: top;
+          	margin-top: 20px;
+          }
+
+          .month, .day {
+            width: 100px;
+          }
+          .year {
+            width: 150px;
+          }
+          ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            color: $red;
+            font-size: 48px;
+            text-align: center;
+          }
+          ::-moz-placeholder { /* Firefox 19+ */
+            color: $red;
+            font-size: 48px;
+            text-align: center;
+          }
+          :-ms-input-placeholder { /* IE 10+ */
+            color: $red;
+            font-size: 48px;
+            text-align: center;
+          }
+          :-moz-placeholder { /* Firefox 18- */
+            color: $red;
+            font-size: 48px;
+            text-align: center;
+          }
+          button {
+            background-color: $green;
+            border: 3px solid $green;
+            color: $white;
+            height: 65px;
+            padding: 0 5px 5px 5px;
+            color: $white;
+            font-size: 48px;
+            text-align: center;
+            margin-left: 10px;
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
+// *************
+// Media queries
+// *************
+
+// ************
+// Hero section
+// ************
 @media (max-width: 1099px) {
   .hero {
     padding-top: 150px;
@@ -27,6 +152,107 @@
     padding-left: 5%;
     h1 {
       font-size: 3.5em;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .hero {
+    background-image: url('../img/mobile-hero-background.jpg');
+  }
+}
+
+@media (max-width: 435px) {
+  .hero {
+    padding-top: 80px;
+    h1 {
+      font-size: 2.6em;
+    }
+  }
+}
+
+// *********
+// Age modal
+// *********
+
+@media (max-width: 994px) {
+  .hero {
+    .modal-lg {
+      width: 98%;
+    }
+  }
+}
+
+@media (max-width: 628px) {
+  .hero {
+    .modal {
+      .modal-body {
+        .modal-inner {
+          h3 {
+            font-size: 3em;
+          }
+          h5 {
+            font-size: 1.5em;
+          }
+          img {
+            margin-top: -20px;
+            max-width: 150px;
+          }
+          form {
+            input {
+              border: 2px solid $green;
+              height: 40px;
+              margin: 10px 5px 10px 5px;
+              font-size: 28px;
+            }
+            button {
+              border: 2px solid $green;
+              height: 45px;
+              padding: 5px 5px 10px 5px;
+              font-size: 28px;
+              margin-left: 5px;
+              &:focus {
+                outline: none;
+              }
+            }
+            @supports (zoom:2) {
+              input[type=checkbox]{
+              zoom: 2;
+              margin-top: -5px;
+              }
+            }
+            @supports not (zoom:2) {
+              input[type=checkbox]{
+                transform: scale(2);
+              }
+            }
+            label{
+              /* fix vertical align issues */
+              display: inline-block;
+              vertical-align: top;
+              margin-top: 20px;
+            }
+            .month, .day {
+              width: 67px;
+            }
+            .year {
+              width: 90px;
+            }
+            ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+              font-size: 28px;
+            }
+            ::-moz-placeholder { /* Firefox 19+ */
+              font-size: 28px;
+            }
+            :-ms-input-placeholder { /* IE 10+ */
+              font-size: 28px;
+            }
+            :-moz-placeholder { /* Firefox 18- */
+              font-size: 28px;
+            }
+          }
+        }
+      }
     }
   }
 }

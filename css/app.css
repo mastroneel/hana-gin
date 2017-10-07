@@ -5820,12 +5820,16 @@ body {
   padding: 0;
   margin: 0; }
 
-a {
+a, a:visited {
   color: #1EB355;
   font-weight: bold;
-  letter-spacing: 1px; }
-  a:hover {
+  letter-spacing: 1px;
+  text-decoration: none; }
+  a:hover, a:visited:hover {
     color: #1EB355;
+    text-decoration: none; }
+  a:focus, a:visited:focus {
+    outline: none;
     text-decoration: none; }
 
 hr {
@@ -5866,6 +5870,112 @@ hr {
     display: inline-block;
     width: 100%; }
 
+.nav-mobile {
+  display: none;
+  text-align: center; }
+  .nav-mobile ul {
+    margin-top: -20px; }
+    .nav-mobile ul li {
+      margin-top: 15px; }
+      .nav-mobile ul li a {
+        font-size: 1.5em; }
+
+#menuToggle {
+  display: block;
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  padding: 20px;
+  -webkit-user-select: none;
+  user-select: none; }
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+  opacity: 0;
+  /* hide this */
+  z-index: 2;
+  /* and place it over the hamburger */
+  -webkit-touch-callout: none; }
+
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #1EB355;
+  border-radius: 2px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease; }
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%; }
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%; }
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #1EB355; }
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2); }
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  opacity: 1;
+  transform: rotate(-45deg) translate(0, -1px); }
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu {
+  position: absolute;
+  width: 310px;
+  height: 100vh;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 165px;
+  background: #fff;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
+
+/*
+ * And let's fade it in from the left
+ */
+#menuToggle input:checked ~ ul {
+  transform: scale(1, 1);
+  opacity: 1; }
+
+@media (max-width: 870px) {
+  .nav-desktop {
+    display: none; }
+
+  .nav-mobile {
+    display: block; } }
 .hero {
   min-height: 85vh;
   text-align: left;
@@ -5878,6 +5988,92 @@ hr {
     line-height: 1.7;
     letter-spacing: 2px;
     font-weight: bold; }
+  .hero .button {
+    padding: 10px;
+    float: left;
+    border: 2px solid #1EB355; }
+  .hero .modal {
+    text-align: center; }
+    .hero .modal .modal-body {
+      padding: 20px;
+      background-color: #262626; }
+      .hero .modal .modal-body .modal-inner {
+        border: 3px solid #1EB355;
+        padding: 40px; }
+        .hero .modal .modal-body .modal-inner img {
+          max-width: 250px;
+          margin-top: -60px; }
+        .hero .modal .modal-body .modal-inner h3, .hero .modal .modal-body .modal-inner h5 {
+          color: #fff; }
+        .hero .modal .modal-body .modal-inner h3 {
+          text-transform: uppercase;
+          font-size: 5em; }
+        .hero .modal .modal-body .modal-inner h5 {
+          font-size: 2em; }
+        .hero .modal .modal-body .modal-inner form input {
+          border: 3px solid #1EB355;
+          background: transparent;
+          height: 60px;
+          padding: 15px 5px 5px 5px;
+          margin: 20px 5px 10px 5px;
+          color: #D61F35;
+          font-size: 48px;
+          text-align: center; }
+          .hero .modal .modal-body .modal-inner form input:focus {
+            outline: none; }
+        .hero .modal .modal-body .modal-inner form label {
+          color: #fff; }
+        .hero .modal .modal-body .modal-inner form input[type=checkbox] {
+          position: relative;
+          text-align: center; }
+        @supports (zoom: 2) {
+          .hero .modal .modal-body .modal-inner form input[type=checkbox] {
+            zoom: 3;
+            margin-top: -20px; } }
+        @supports not (zoom: 2) {
+          .hero .modal .modal-body .modal-inner form input[type=checkbox] {
+            transform: scale(3); } }
+        .hero .modal .modal-body .modal-inner form label {
+          /* fix vertical align issues */
+          display: inline-block;
+          vertical-align: top;
+          margin-top: 20px; }
+        .hero .modal .modal-body .modal-inner form .month, .hero .modal .modal-body .modal-inner form .day {
+          width: 100px; }
+        .hero .modal .modal-body .modal-inner form .year {
+          width: 150px; }
+        .hero .modal .modal-body .modal-inner form ::-webkit-input-placeholder {
+          /* Chrome/Opera/Safari */
+          color: #D61F35;
+          font-size: 48px;
+          text-align: center; }
+        .hero .modal .modal-body .modal-inner form ::-moz-placeholder {
+          /* Firefox 19+ */
+          color: #D61F35;
+          font-size: 48px;
+          text-align: center; }
+        .hero .modal .modal-body .modal-inner form :-ms-input-placeholder {
+          /* IE 10+ */
+          color: #D61F35;
+          font-size: 48px;
+          text-align: center; }
+        .hero .modal .modal-body .modal-inner form :-moz-placeholder {
+          /* Firefox 18- */
+          color: #D61F35;
+          font-size: 48px;
+          text-align: center; }
+        .hero .modal .modal-body .modal-inner form button {
+          background-color: #1EB355;
+          border: 3px solid #1EB355;
+          color: #fff;
+          height: 65px;
+          padding: 0 5px 5px 5px;
+          color: #fff;
+          font-size: 48px;
+          text-align: center;
+          margin-left: 10px; }
+          .hero .modal .modal-body .modal-inner form button:focus {
+            outline: none; }
 
 @media (max-width: 1099px) {
   .hero {
@@ -5889,13 +6085,73 @@ hr {
     padding-left: 5%; }
     .hero h1 {
       font-size: 3.5em; } }
+@media (max-width: 650px) {
+  .hero {
+    background-image: url("../img/mobile-hero-background.jpg"); } }
+@media (max-width: 435px) {
+  .hero {
+    padding-top: 80px; }
+    .hero h1 {
+      font-size: 2.6em; } }
+@media (max-width: 994px) {
+  .hero .modal-lg {
+    width: 98%; } }
+@media (max-width: 628px) {
+  .hero .modal .modal-body .modal-inner h3 {
+    font-size: 3em; }
+  .hero .modal .modal-body .modal-inner h5 {
+    font-size: 1.5em; }
+  .hero .modal .modal-body .modal-inner img {
+    margin-top: -20px;
+    max-width: 150px; }
+  .hero .modal .modal-body .modal-inner form input {
+    border: 2px solid #1EB355;
+    height: 40px;
+    margin: 10px 5px 10px 5px;
+    font-size: 28px; }
+  .hero .modal .modal-body .modal-inner form button {
+    border: 2px solid #1EB355;
+    height: 45px;
+    padding: 5px 5px 10px 5px;
+    font-size: 28px;
+    margin-left: 5px; }
+    .hero .modal .modal-body .modal-inner form button:focus {
+      outline: none; }
+  @supports (zoom: 2) {
+    .hero .modal .modal-body .modal-inner form input[type=checkbox] {
+      zoom: 2;
+      margin-top: -5px; } }
+  @supports not (zoom: 2) {
+    .hero .modal .modal-body .modal-inner form input[type=checkbox] {
+      transform: scale(2); } }
+  .hero .modal .modal-body .modal-inner form label {
+    /* fix vertical align issues */
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px; }
+  .hero .modal .modal-body .modal-inner form .month, .hero .modal .modal-body .modal-inner form .day {
+    width: 67px; }
+  .hero .modal .modal-body .modal-inner form .year {
+    width: 90px; }
+  .hero .modal .modal-body .modal-inner form ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-size: 28px; }
+  .hero .modal .modal-body .modal-inner form ::-moz-placeholder {
+    /* Firefox 19+ */
+    font-size: 28px; }
+  .hero .modal .modal-body .modal-inner form :-ms-input-placeholder {
+    /* IE 10+ */
+    font-size: 28px; }
+  .hero .modal .modal-body .modal-inner form :-moz-placeholder {
+    /* Firefox 18- */
+    font-size: 28px; } }
 .our-story {
   text-align: center;
   min-height: 100vh;
   padding-bottom: 60px;
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/filler-background.jpg");
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/filler-background.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/filler-background.jpg");
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../our-story-1.jpg");
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/our-story-1.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/our-story-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed; }

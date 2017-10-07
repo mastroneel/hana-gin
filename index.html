@@ -8,6 +8,29 @@
   </head>
   <body>
 
+    <!-- mobile navigation -->
+    <div class="nav-mobile">
+      <nav role="navigation">
+        <div id="menuToggle">
+          <input type="checkbox" />
+
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="menu">
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Our Craft</a></li>
+            <li><a href="#">Awards</a></li>
+            <li><a href="#">Cocktails</a></li>
+            <li><a href="#">Buy</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+
     <!-- desktop nav -->
     <nav class="nav-desktop">
       <ul>
@@ -23,6 +46,55 @@
 
     <!-- hero -->
     <div class="hero">
+
+
+
+      <div class="container">
+        <div class="row text-center">
+            <a href="#" class="button" data-toggle="modal" data-target="#ageModal">Click to open Modal</a>
+        </div>
+
+      </div>
+
+
+      <div class="modal fade" id="ageModal" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <!-- <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title" id="myModalLabel">Large Modal</h4>
+            </div> -->
+            <div class="modal-body">
+              <div class="modal-inner">
+                <h3>Welcome</h3>
+                <h5>You have to be over 21 to enter this site</h5>
+                <form>
+                  <input class="month" type="text" maxlength="2" placeholder="MM">
+                  <input class="day" type="text" maxlength="2" placeholder="DD">
+                  <input class="year" type="text" maxlength="4" placeholder="YYYY">
+                  <button type="submit">OK</button>
+                  <br>
+                  <input id="checkbox" type="checkbox">
+                  <label for="checkbox">Remember Me</label>
+                </form>
+                <img src="img/white-logo.png">
+              </div>
+            </div>
+            <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
       <div class="row">
         <div class="col-xs-12 col-sm-6">
           <h1>Distilled <br> to Perfection</h1>
@@ -80,7 +152,7 @@
               </p>
             </li>
             <li class="vacuum-image">
-              <img src="img/filler-background.jpg">
+              <img src="img/bottle-1.jpg">
             </li>
             <li class="mastery">
               <h5>
@@ -117,7 +189,7 @@
               </p>
             </li>
             <li class="mash-image">
-              <img src="img/filler-background.jpg">
+              <img src="img/lavender.jpg">
             </li>
             <li class="vacuum">
               <h5>
@@ -179,7 +251,7 @@
               </h5>
             </li>
             <li>
-              <img src="img/filler-background.jpg">
+              <img src="img/bottle-1.jpg">
             </li>
             <li>
               <p>
@@ -237,7 +309,7 @@
               </p>
             </li>
             <li>
-              <img src="img/filler-background.jpg">
+              <img src="img/lavender.jpg">
             </li>
             <li class="vacuum-distillation">
               <h5>
@@ -491,6 +563,12 @@
       </div>
     </footer>
 
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous">
+    </script>
+    <script src="node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
 
   </body>
 </html>
