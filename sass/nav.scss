@@ -32,6 +32,11 @@
 .nav-mobile {
   display: none;
 	text-align: center;
+  width: 100%;
+  background-color: $white;
+  height: 70px;
+  position: fixed;
+  z-index: 1000;
   ul {
     margin-top: -20px;
     li {
@@ -51,6 +56,7 @@
 	padding: 20px;
   -webkit-user-select: none;
   user-select: none;
+  position: fixed;
 }
 
 #menuToggle input {
@@ -124,9 +130,9 @@
  * at the top left of the screen
  */
 #menu {
-  position: absolute;
+  position: fixed;
   width: 310px;
-	height: 100vh;
+	height: 110vh;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 165px;

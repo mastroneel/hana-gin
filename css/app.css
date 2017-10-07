@@ -5872,7 +5872,12 @@ hr {
 
 .nav-mobile {
   display: none;
-  text-align: center; }
+  text-align: center;
+  width: 100%;
+  background-color: #fff;
+  height: 70px;
+  position: fixed;
+  z-index: 1000; }
   .nav-mobile ul {
     margin-top: -20px; }
     .nav-mobile ul li {
@@ -5887,7 +5892,8 @@ hr {
   background: #fff;
   padding: 20px;
   -webkit-user-select: none;
-  user-select: none; }
+  user-select: none;
+  position: fixed; }
 
 #menuToggle input {
   display: block;
@@ -5949,9 +5955,9 @@ hr {
  * at the top left of the screen
  */
 #menu {
-  position: absolute;
+  position: fixed;
   width: 310px;
-  height: 100vh;
+  height: 110vh;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 165px;
@@ -6181,7 +6187,9 @@ hr {
     width: 75%; } }
 @media (max-width: 535px) {
   .our-story p {
-    width: 95%; } }
+    width: 95%;
+    font-size: 1.2em;
+    margin-top: 20px; } }
 .our-craft-mobile {
   padding-bottom: 200px; }
   .our-craft-mobile .title {
@@ -6368,6 +6376,14 @@ hr {
 @media (max-width: 767px) {
   .awards .awards-row {
     margin-top: 40px; } }
+@media (max-width: 440px) {
+  .awards .button {
+    width: 300px;
+    padding: 15px 10px; } }
+@media (max-width: 400px) {
+  .awards .button {
+    font-size: 0.9em;
+    padding: 10px 3px; } }
 .cocktails {
   min-height: 100vh;
   padding-bottom: 80px;
@@ -6529,7 +6545,7 @@ hr {
     .cocktails .cocktail-pic-10 .image-overlay {
       padding-top: 35%; } }
 .location {
-  height: 100vh;
+  min-height: 100vh;
   text-align: center;
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/find-us-background.jpg");
   background: -o-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/find-us-background.jpg");
@@ -6556,7 +6572,7 @@ hr {
     margin-bottom: -62px;
     margin-left: -20px; }
   .location .addresses {
-    width: 40%; }
+    width: 50%; }
     .location .addresses .col-md-6 {
       padding-left: 80px;
       margin-top: 40px; }
@@ -6564,6 +6580,14 @@ hr {
 @media (max-width: 992px) {
   .location {
     background-attachment: scroll; } }
+@media (max-width: 430px) {
+  .location .title h2 {
+    font-size: 1.5em; }
+  .location hr {
+    width: 20em; } }
+@media (max-width: 505px) {
+  .location .addresses {
+    width: 100%; } }
 .contact {
   text-align: center;
   height: 100vh; }
@@ -6579,7 +6603,7 @@ hr {
     .contact .address p {
       color: #262626; }
   .contact form {
-    width: 50%;
+    width: 70%;
     text-align: left;
     margin: 40px auto; }
     .contact form p {
@@ -6599,11 +6623,16 @@ hr {
     .contact .button-container .button {
       padding: 10px 20px; }
 
+@media (max-width: 922px) {
+  .contact form {
+    width: 90%; } }
 footer {
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 20px; }
   footer img {
     max-width: 100px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    margin-top: 40px; }
   footer p {
     font-size: 0.8em;
     line-height: 0.7; }

@@ -44,3 +44,21 @@
     }
   }
 }
+
+@media (max-width: 440px) {
+  .awards {
+    .button {
+      width: 300px;
+      padding: 15px 10px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .awards {
+    .button {
+      font-size: 0.9em;
+      padding: 10px 3px;
+    }
+  }
+}
