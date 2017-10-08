@@ -6257,7 +6257,7 @@ hr {
   .our-craft-mobile .circle {
     margin-left: 106%; }
   .our-craft-mobile ul li p {
-    font-size: 0.8em; } }
+    font-size: 11px; } }
 @media (max-width: 400px) {
   .our-craft-mobile .title h2 {
     font-size: 1.15em; }
@@ -6266,7 +6266,7 @@ hr {
   .our-craft-mobile .circle {
     margin-left: 107%; }
   .our-craft-mobile ul li p {
-    font-size: 0.8em; }
+    font-size: 11px; }
   .our-craft-mobile .final-list .vacuum {
     margin-top: 40px;
     height: 320px; } }
@@ -6382,7 +6382,7 @@ hr {
     padding: 15px 10px; } }
 @media (max-width: 400px) {
   .awards .button {
-    font-size: 0.9em;
+    font-size: 11px;
     padding: 10px 3px; } }
 .cocktails {
   min-height: 100vh;
@@ -6531,8 +6531,8 @@ hr {
   .cocktails .cocktail-pic-8,
   .cocktails .cocktail-pic-9,
   .cocktails .cocktail-pic-10 {
-    width: 150px;
-    height: 150px; }
+    width: 130px;
+    height: 130px; }
     .cocktails .cocktail-pic-1 .image-overlay,
     .cocktails .cocktail-pic-2 .image-overlay,
     .cocktails .cocktail-pic-3 .image-overlay,
