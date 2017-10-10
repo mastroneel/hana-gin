@@ -175,7 +175,7 @@
 // Age modal
 // *********
 
-@media (max-width: 994px) {
+@media (min-width: 629px) and (max-width: 994px) {
   .hero {
     .modal-lg {
       width: 98%;
@@ -187,7 +187,9 @@
   .hero {
     .modal {
       .modal-body {
+        padding: 12px;
         .modal-inner {
+          padding: 15px;
           h3 {
             font-size: 3em;
           }
