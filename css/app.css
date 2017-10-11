@@ -6817,15 +6817,11 @@ hr {
     width: 20em; }
   .location iframe {
     width: 300px;
-    height: 300px; }
-  .location .addresses {
-    margin-top: -150px; } }
+    height: 300px; } }
 @media (max-width: 346px) {
   .location iframe {
     width: 280px;
-    height: 280px; }
-  .location .addresses {
-    margin-top: -190px; } }
+    height: 280px; } }
 .contact {
   text-align: center;
   height: 100vh; }
