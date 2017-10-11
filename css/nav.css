@@ -10,7 +10,7 @@ Error: Undefined variable: "$white".
 36:   background-color: $white;
 37:   height: 70px;
 38:   position: fixed;
-39:   z-index: 1000;
+39:   z-index: 99;
 40:   ul {
 41:     margin-top: -20px;
 
@@ -62,4 +62,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 36 of /Users/laurenmastroni/Code/Sites/hana-gin/sass/nav.scss\A \A 31: \A 32: .nav-mobile {\A 33:   display: none;\A 34: 	text-align: center;\A 35:   width: 100%;\A 36:   background-color: $white;\A 37:   height: 70px;\A 38:   position: fixed;\A 39:   z-index: 1000;\A 40:   ul {\A 41:     margin-top: -20px;"; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 36 of /Users/laurenmastroni/Code/Sites/hana-gin/sass/nav.scss\A \A 31: \A 32: .nav-mobile {\A 33:   display: none;\A 34: 	text-align: center;\A 35:   width: 100%;\A 36:   background-color: $white;\A 37:   height: 70px;\A 38:   position: fixed;\A 39:   z-index: 99;\A 40:   ul {\A 41:     margin-top: -20px;"; }
