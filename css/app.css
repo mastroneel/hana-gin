@@ -6568,32 +6568,6 @@ hr {
   .cocktails hr {
     width: 12em;
     margin-bottom: 20px; }
-  .cocktails .modal-dialog {
-    width: 65%;
-    border-radius: 2px; }
-    .cocktails .modal-dialog .modal-content {
-      padding: 30px; }
-      .cocktails .modal-dialog .modal-content .modal-body {
-        border: 3px solid #1EB355;
-        border-radius: 3px;
-        padding: 10px 20px 40px 40px; }
-        .cocktails .modal-dialog .modal-content .modal-body h4 {
-          font-size: 36px;
-          color: #D61F35;
-          margin-bottom: 20px;
-          font-weight: bold; }
-        .cocktails .modal-dialog .modal-content .modal-body h5 {
-          font-weight: bold;
-          margin-top: 15px; }
-        .cocktails .modal-dialog .modal-content .modal-body ul, .cocktails .modal-dialog .modal-content .modal-body ol {
-          text-align: left;
-          color: #262626;
-          line-height: 1.5; }
-        .cocktails .modal-dialog .modal-content .modal-body img {
-          width: 70%;
-          border-radius: 3px; }
-        .cocktails .modal-dialog .modal-content .modal-body .logo {
-          max-width: 150px; }
   .cocktails .cocktail-pic-1,
   .cocktails .cocktail-pic-2,
   .cocktails .cocktail-pic-3,
@@ -6648,6 +6622,13 @@ hr {
     .cocktails .cocktail-pic-10:hover .image-overlay {
       opacity: 1;
       transition: 0.5s; }
+  .cocktails .cocktail-pic-3,
+  .cocktails .cocktail-pic-4,
+  .cocktails .cocktail-pic-5,
+  .cocktails .cocktail-pic-6,
+  .cocktails .cocktail-pic-7,
+  .cocktails .cocktail-pic-8 {
+    background-position: center; }
   .cocktails .cocktail-pic-1 {
     background-image: url("../img/cucumber-gimlet.jpg"); }
   .cocktails .cocktail-pic-2 {
@@ -6667,6 +6648,35 @@ hr {
   .cocktails .cocktail-row {
     width: 75%;
     margin: 20px auto 70px auto; }
+  .cocktails .modal-dialog {
+    width: 65%;
+    border-radius: 2px;
+    margin: 0 auto; }
+    .cocktails .modal-dialog .modal-content {
+      padding: 30px; }
+      .cocktails .modal-dialog .modal-content .modal-body {
+        border: 3px solid #1EB355;
+        border-radius: 3px;
+        padding: 10px 20px 40px 40px; }
+        .cocktails .modal-dialog .modal-content .modal-body h4 {
+          font-size: 36px;
+          color: #D61F35;
+          margin-bottom: 20px;
+          font-weight: bold; }
+        .cocktails .modal-dialog .modal-content .modal-body h5 {
+          font-weight: bold;
+          margin-top: 15px; }
+        .cocktails .modal-dialog .modal-content .modal-body ul, .cocktails .modal-dialog .modal-content .modal-body ol {
+          text-align: left;
+          color: #262626;
+          line-height: 1.5; }
+        .cocktails .modal-dialog .modal-content .modal-body img {
+          width: 90%; }
+        .cocktails .modal-dialog .modal-content .modal-body .bloom {
+          margin-top: 60px; }
+        .cocktails .modal-dialog .modal-content .modal-body .logo {
+          max-width: 150px;
+          margin-top: 40px; }
 
 @media (max-width: 1247px) {
   .cocktails .cocktail-row {
@@ -6747,6 +6757,39 @@ hr {
     .cocktails .cocktail-pic-9 .image-overlay,
     .cocktails .cocktail-pic-10 .image-overlay {
       padding-top: 35%; } }
+@media (max-width: 992px) {
+  .cocktails .modal-dialog {
+    width: 80%; }
+    .cocktails .modal-dialog .modal-content .modal-body {
+      text-align: center; }
+      .cocktails .modal-dialog .modal-content .modal-body img {
+        width: 25%; }
+      .cocktails .modal-dialog .modal-content .modal-body .bloom {
+        margin-top: 5px; }
+      .cocktails .modal-dialog .modal-content .modal-body h5 {
+        text-align: left; } }
+@media (max-width: 797px) {
+  .cocktails .modal-dialog .modal-content .modal-body {
+    padding: 15px; }
+    .cocktails .modal-dialog .modal-content .modal-body img {
+      width: 40%; } }
+@media (max-width: 710px) {
+  .cocktails .modal-dialog {
+    width: 90%; }
+    .cocktails .modal-dialog .modal-content .modal-body img {
+      width: 40%; } }
+@media (max-width: 710px) {
+  .cocktails .modal-dialog .modal-content .modal-body img {
+    width: 60%; } }
+@media (max-width: 435px) {
+  .cocktails .modal-dialog .modal-content {
+    padding: 15px; }
+    .cocktails .modal-dialog .modal-content .modal-body h4 {
+      font-size: 25px; }
+    .cocktails .modal-dialog .modal-content .modal-body img {
+      width: 70%; }
+    .cocktails .modal-dialog .modal-content .modal-body ul, .cocktails .modal-dialog .modal-content .modal-body ol {
+      font-size: 0.9em; } }
 .location {
   min-height: 100vh;
   padding-bottom: 60px;
