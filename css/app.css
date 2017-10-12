@@ -5872,13 +5872,13 @@ hr {
     -webkit-box-shadow: 12px 12px 10px 1px rgba(0, 0, 0, 0.6);
     -moz-box-shadow: 12px 12px 10px 1px rgba(0, 0, 0, 0.6);
     box-shadow: 12px 12px 10px 1px rgba(0, 0, 0, 0.6);
-    height: 90%;
+    height: 80%;
     left: 0;
     margin: auto;
     position: absolute;
     right: 0;
     top: 0;
-    width: 80%;
+    width: 70%;
     z-index: 101;
     padding: 30px;
     background-color: #262626; }
@@ -5892,16 +5892,19 @@ hr {
       .agemodal .message .message-inner h1 {
         text-transform: uppercase;
         color: #fff;
-        font-size: 70px; }
+        font-size: 50px;
+        font-weight: bold;
+        letter-spacing: 2px; }
       .agemodal .message .message-inner p {
         color: #fff;
-        font-size: 26px; }
+        font-size: 20px; }
       .agemodal .message .message-inner form select {
-        border: 3px solid #D61F35;
+        border: 3px solid #1EB355;
         background: transparent;
-        font-size: 30px;
+        font-size: 20px;
         color: #D61F35;
-        height: 60px;
+        font-weight: bold;
+        height: 45px;
         border-radius: 1px;
         margin: 10px; }
         .agemodal .message .message-inner form select:focus {
@@ -5933,7 +5936,7 @@ hr {
         color: #fff;
         cursor: pointer;
         font-family: 'AvenirNext', sans-serif;
-        font-size: 32px;
+        font-size: 26px;
         padding: 10px 5px 5px 5px;
         text-decoration: none;
         text-align: center;
@@ -5949,31 +5952,28 @@ hr {
           position: relative;
           top: 1px; }
     .agemodal .message img {
-      width: 200px;
-      margin-top: 30px; }
+      width: 230px;
+      margin-top: 20px; }
 
+@media (max-width: 782px) {
+  .agemodal .message {
+    width: 80%; } }
 @media (max-width: 693px) {
   .agemodal .message {
-    width: 95%;
-    height: 95%; } }
+    width: 95%; } }
 @media (max-width: 590px) {
   .agemodal .message .message-inner h1 {
     font-size: 50px; }
   .agemodal .message .message-inner p {
     font-size: 16px; }
-  .agemodal .message .message-inner form select {
-    height: 50px;
-    font-size: 24px; }
   .agemodal .message .message-inner form .formsubmit {
     font-size: 20px;
-    width: 60%; }
-  .agemodal .message img {
-    width: 150px; } }
+    width: 60%; } }
 @media (max-width: 420px) {
   .agemodal .message {
     padding: 15px; }
     .agemodal .message .message-inner h1 {
-      font-size: 45px; }
+      font-size: 40px; }
     .agemodal .message .message-inner p {
       font-size: 14px; }
     .agemodal .message .message-inner form select {
@@ -5987,23 +5987,31 @@ hr {
       font-size: 18px;
       width: 70%; }
     .agemodal .message img {
+      width: 175px;
+      margin-top: 40px; } }
+@media (max-height: 600px) {
+  .agemodal .message {
+    height: 90%; }
+    .agemodal .message .message-inner img {
       width: 150px; } }
-@media (max-height: 632px) {
+@media (max-height: 523px) {
   .agemodal .message .message-inner img {
-    display: none; } }
+    width: 100px; } }
 @media (max-height: 494px) {
   .agemodal .message .message-inner h1 {
     font-size: 40px; }
   .agemodal .message .message-inner p {
     font-size: 20px; }
   .agemodal .message .message-inner form select {
-    font-size: 25px;
     height: 30px; }
   .agemodal .message .message-inner form .remember label {
     font-size: 14px;
     margin-top: -3px; }
   .agemodal .message .message-inner form .formsubmit {
     font-size: 14px; } }
+@media (max-height: 447px) {
+  .agemodal .message .message-inner img {
+    display: none; } }
 @media (max-height: 355px) {
   .agemodal .message {
     padding: 10px; }
@@ -6155,9 +6163,10 @@ hr {
   min-height: 85vh;
   text-align: left;
   padding: 8%;
-  background-image: url("../img/hero-pic-1.jpg");
+  background-image: url("../img/hero-image-large.png");
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position: right; }
   .hero h1 {
     font-size: 5em;
     line-height: 1.7;
@@ -6339,11 +6348,11 @@ hr {
   .our-story p {
     color: #fff;
     margin: 0 auto;
-    width: 50%;
+    width: 45%;
     text-align: left;
-    font-size: 1.4em;
-    line-height: 1.7;
-    margin-top: 60px;
+    font-size: 1.5em;
+    line-height: 2;
+    margin-top: 50px;
     letter-spacing: 1px; }
     .our-story p span {
       color: #1EB355;
@@ -6351,18 +6360,24 @@ hr {
 
 @media (max-width: 1099px) {
   .our-story p {
-    width: 65%; } }
+    width: 60%; } }
 @media (max-width: 992px) {
   .our-story {
     background-attachment: scroll; } }
 @media (max-width: 767px) {
   .our-story p {
-    width: 75%; } }
+    width: 75%;
+    font-size: 1.4em; } }
 @media (max-width: 535px) {
   .our-story p {
-    width: 95%;
-    font-size: 1.2em;
-    margin-top: 20px; } }
+    width: 85%;
+    font-size: 1.3em;
+    margin-top: 50px; } }
+@media (max-width: 360px) {
+  .our-story p {
+    width: 85%;
+    font-size: 1.1em;
+    margin-top: 40px; } }
 .our-craft-mobile {
   padding-bottom: 200px; }
   .our-craft-mobile .title {

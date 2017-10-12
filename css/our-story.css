@@ -9,10 +9,10 @@ Error: Undefined variable: "$white".
 20:   p {
 21:     color: $white;
 22:     margin: 0 auto;
-23:     width: 50%;
+23:     width: 45%;
 24:     text-align: left;
-25:     font-size: 1.4em;
-26:     line-height: 1.7;
+25:     font-size: 1.5em;
+26:     line-height: 2;
 
 Backtrace:
 /Users/laurenmastroni/Code/Sites/hana-gin/sass/our-story.scss:21
@@ -73,4 +73,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 21 of /Users/laurenmastroni/Code/Sites/hana-gin/sass/our-story.scss\A \A 16:   background-attachment: fixed;\A 17:   hr {\A 18:     width: 12em;\A 19:   }\A 20:   p {\A 21:     color: $white;\A 22:     margin: 0 auto;\A 23:     width: 50%;\A 24:     text-align: left;\A 25:     font-size: 1.4em;\A 26:     line-height: 1.7;"; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 21 of /Users/laurenmastroni/Code/Sites/hana-gin/sass/our-story.scss\A \A 16:   background-attachment: fixed;\A 17:   hr {\A 18:     width: 12em;\A 19:   }\A 20:   p {\A 21:     color: $white;\A 22:     margin: 0 auto;\A 23:     width: 45%;\A 24:     text-align: left;\A 25:     font-size: 1.5em;\A 26:     line-height: 2;"; }
