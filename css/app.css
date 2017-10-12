@@ -6568,6 +6568,32 @@ hr {
   .cocktails hr {
     width: 12em;
     margin-bottom: 20px; }
+  .cocktails .modal-dialog {
+    width: 65%;
+    border-radius: 2px; }
+    .cocktails .modal-dialog .modal-content {
+      padding: 30px; }
+      .cocktails .modal-dialog .modal-content .modal-body {
+        border: 3px solid #1EB355;
+        border-radius: 3px;
+        padding: 10px 20px 40px 40px; }
+        .cocktails .modal-dialog .modal-content .modal-body h4 {
+          font-size: 36px;
+          color: #D61F35;
+          margin-bottom: 20px;
+          font-weight: bold; }
+        .cocktails .modal-dialog .modal-content .modal-body h5 {
+          font-weight: bold;
+          margin-top: 15px; }
+        .cocktails .modal-dialog .modal-content .modal-body ul, .cocktails .modal-dialog .modal-content .modal-body ol {
+          text-align: left;
+          color: #262626;
+          line-height: 1.5; }
+        .cocktails .modal-dialog .modal-content .modal-body img {
+          width: 70%;
+          border-radius: 3px; }
+        .cocktails .modal-dialog .modal-content .modal-body .logo {
+          max-width: 150px; }
   .cocktails .cocktail-pic-1,
   .cocktails .cocktail-pic-2,
   .cocktails .cocktail-pic-3,
@@ -6850,7 +6876,10 @@ hr {
       border: 1px solid #1EB355;
       border-radius: 3px;
       height: 35px;
-      width: 100%; }
+      width: 100%;
+      color: #262626; }
+      .contact form input:focus {
+        outline: none; }
   .contact .button-container {
     text-align: center;
     margin-top: 30px; }

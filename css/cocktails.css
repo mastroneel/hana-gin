@@ -1,87 +1,188 @@
-/*
-Error: Undefined variable: "$white".
-        on line 26 of /Users/laurenmastroni/Code/Sites/hana-gin/sass/cocktails.scss
+.cocktails {
+  min-height: 100vh;
+  padding-bottom: 80px;
+  text-align: center; }
+  .cocktails hr {
+    width: 12em;
+    margin-bottom: 20px; }
+  .cocktails .modal-dialog {
+    width: 65%;
+    border-radius: 2px; }
+    .cocktails .modal-dialog .modal-content {
+      padding: 30px; }
+      .cocktails .modal-dialog .modal-content .modal-body {
+        border: 3px solid #1EB355;
+        border-radius: 3px;
+        padding: 10px 20px 40px 40px; }
+        .cocktails .modal-dialog .modal-content .modal-body h4 {
+          font-size: 36px;
+          color: #D61F35;
+          margin-bottom: 20px;
+          font-weight: bold; }
+        .cocktails .modal-dialog .modal-content .modal-body h5 {
+          font-weight: bold;
+          margin-top: 15px; }
+        .cocktails .modal-dialog .modal-content .modal-body ul, .cocktails .modal-dialog .modal-content .modal-body ol {
+          text-align: left;
+          color: #262626;
+          line-height: 1.5; }
+        .cocktails .modal-dialog .modal-content .modal-body img {
+          width: 70%;
+          border-radius: 3px; }
+        .cocktails .modal-dialog .modal-content .modal-body .logo {
+          max-width: 150px; }
+  .cocktails .cocktail-pic-1,
+  .cocktails .cocktail-pic-2,
+  .cocktails .cocktail-pic-3,
+  .cocktails .cocktail-pic-4,
+  .cocktails .cocktail-pic-5,
+  .cocktails .cocktail-pic-6,
+  .cocktails .cocktail-pic-7,
+  .cocktails .cocktail-pic-8,
+  .cocktails .cocktail-pic-9,
+  .cocktails .cocktail-pic-10 {
+    height: 150px;
+    width: 150px;
+    background-size: cover;
+    margin: 20px auto; }
+    .cocktails .cocktail-pic-1 .image-overlay,
+    .cocktails .cocktail-pic-2 .image-overlay,
+    .cocktails .cocktail-pic-3 .image-overlay,
+    .cocktails .cocktail-pic-4 .image-overlay,
+    .cocktails .cocktail-pic-5 .image-overlay,
+    .cocktails .cocktail-pic-6 .image-overlay,
+    .cocktails .cocktail-pic-7 .image-overlay,
+    .cocktails .cocktail-pic-8 .image-overlay,
+    .cocktails .cocktail-pic-9 .image-overlay,
+    .cocktails .cocktail-pic-10 .image-overlay {
+      opacity: 0;
+      background-color: rgba(30, 179, 85, 0.8);
+      color: #fff;
+      width: 100%;
+      height: 100%;
+      padding-top: 40%;
+      transition: 0.5s; }
+      .cocktails .cocktail-pic-1 .image-overlay h6,
+      .cocktails .cocktail-pic-2 .image-overlay h6,
+      .cocktails .cocktail-pic-3 .image-overlay h6,
+      .cocktails .cocktail-pic-4 .image-overlay h6,
+      .cocktails .cocktail-pic-5 .image-overlay h6,
+      .cocktails .cocktail-pic-6 .image-overlay h6,
+      .cocktails .cocktail-pic-7 .image-overlay h6,
+      .cocktails .cocktail-pic-8 .image-overlay h6,
+      .cocktails .cocktail-pic-9 .image-overlay h6,
+      .cocktails .cocktail-pic-10 .image-overlay h6 {
+        font-size: 1.2em; }
+    .cocktails .cocktail-pic-1:hover .image-overlay,
+    .cocktails .cocktail-pic-2:hover .image-overlay,
+    .cocktails .cocktail-pic-3:hover .image-overlay,
+    .cocktails .cocktail-pic-4:hover .image-overlay,
+    .cocktails .cocktail-pic-5:hover .image-overlay,
+    .cocktails .cocktail-pic-6:hover .image-overlay,
+    .cocktails .cocktail-pic-7:hover .image-overlay,
+    .cocktails .cocktail-pic-8:hover .image-overlay,
+    .cocktails .cocktail-pic-9:hover .image-overlay,
+    .cocktails .cocktail-pic-10:hover .image-overlay {
+      opacity: 1;
+      transition: 0.5s; }
+  .cocktails .cocktail-pic-1 {
+    background-image: url("../img/cucumber-gimlet.jpg"); }
+  .cocktails .cocktail-pic-2 {
+    background-image: url("../img/cucumber-gin-tonic.jpg"); }
+  .cocktails .cocktail-pic-3 {
+    background-image: url("../img/hana-fizz.jpg"); }
+  .cocktails .cocktail-pic-4 {
+    background-image: url("../img/hana-gin-margarita.jpg"); }
+  .cocktails .cocktail-pic-5 {
+    background-image: url("../img/honey-hana.jpg"); }
+  .cocktails .cocktail-pic-6 {
+    background-image: url("../img/pear-thyme-gin-fizz.jpg"); }
+  .cocktails .cocktail-pic-7 {
+    background-image: url("../img/raspberry-bloom.jpg"); }
+  .cocktails .cocktail-pic-8 {
+    background-image: url("../img/white-peach-refresher.jpg"); }
+  .cocktails .cocktail-row {
+    width: 75%;
+    margin: 20px auto 70px auto; }
 
-21:     background-size: cover;
-22:     margin: 20px auto;
-23:     .image-overlay {
-24:       opacity: 0;
-25:       background-color: rgba(30, 179, 85, 0.8);
-26:       color: $white;
-27:       width: 100%;
-28:       height: 100%;
-29:       padding-top: 40%;
-30:       transition: 0.5s;
-31:       h6 {
+@media (max-width: 1247px) {
+  .cocktails .cocktail-row {
+    width: 85%; } }
+@media (max-width: 1080px) {
+  .cocktails .cocktail-row {
+    width: 100%; }
+  .cocktails .cocktail-pic-1,
+  .cocktails .cocktail-pic-2,
+  .cocktails .cocktail-pic-3,
+  .cocktails .cocktail-pic-4,
+  .cocktails .cocktail-pic-5,
+  .cocktails .cocktail-pic-6,
+  .cocktails .cocktail-pic-7,
+  .cocktails .cocktail-pic-8,
+  .cocktails .cocktail-pic-9,
+  .cocktails .cocktail-pic-10 {
+    width: 120px;
+    height: 120px; }
+    .cocktails .cocktail-pic-1 .image-overlay,
+    .cocktails .cocktail-pic-2 .image-overlay,
+    .cocktails .cocktail-pic-3 .image-overlay,
+    .cocktails .cocktail-pic-4 .image-overlay,
+    .cocktails .cocktail-pic-5 .image-overlay,
+    .cocktails .cocktail-pic-6 .image-overlay,
+    .cocktails .cocktail-pic-7 .image-overlay,
+    .cocktails .cocktail-pic-8 .image-overlay,
+    .cocktails .cocktail-pic-9 .image-overlay,
+    .cocktails .cocktail-pic-10 .image-overlay {
+      padding-top: 35%; } }
+@media (max-width: 767px) {
+  .cocktails .cocktail-row {
+    padding: 0; }
+  .cocktails .cocktail-pic-1,
+  .cocktails .cocktail-pic-2,
+  .cocktails .cocktail-pic-3,
+  .cocktails .cocktail-pic-4,
+  .cocktails .cocktail-pic-5,
+  .cocktails .cocktail-pic-6,
+  .cocktails .cocktail-pic-7,
+  .cocktails .cocktail-pic-8,
+  .cocktails .cocktail-pic-9,
+  .cocktails .cocktail-pic-10 {
+    width: 180px;
+    height: 180px; }
+    .cocktails .cocktail-pic-1 .image-overlay,
+    .cocktails .cocktail-pic-2 .image-overlay,
+    .cocktails .cocktail-pic-3 .image-overlay,
+    .cocktails .cocktail-pic-4 .image-overlay,
+    .cocktails .cocktail-pic-5 .image-overlay,
+    .cocktails .cocktail-pic-6 .image-overlay,
+    .cocktails .cocktail-pic-7 .image-overlay,
+    .cocktails .cocktail-pic-8 .image-overlay,
+    .cocktails .cocktail-pic-9 .image-overlay,
+    .cocktails .cocktail-pic-10 .image-overlay {
+      padding-top: 35%; } }
+@media (max-width: 435px) {
+  .cocktails .cocktail-pic-1,
+  .cocktails .cocktail-pic-2,
+  .cocktails .cocktail-pic-3,
+  .cocktails .cocktail-pic-4,
+  .cocktails .cocktail-pic-5,
+  .cocktails .cocktail-pic-6,
+  .cocktails .cocktail-pic-7,
+  .cocktails .cocktail-pic-8,
+  .cocktails .cocktail-pic-9,
+  .cocktails .cocktail-pic-10 {
+    width: 130px;
+    height: 130px; }
+    .cocktails .cocktail-pic-1 .image-overlay,
+    .cocktails .cocktail-pic-2 .image-overlay,
+    .cocktails .cocktail-pic-3 .image-overlay,
+    .cocktails .cocktail-pic-4 .image-overlay,
+    .cocktails .cocktail-pic-5 .image-overlay,
+    .cocktails .cocktail-pic-6 .image-overlay,
+    .cocktails .cocktail-pic-7 .image-overlay,
+    .cocktails .cocktail-pic-8 .image-overlay,
+    .cocktails .cocktail-pic-9 .image-overlay,
+    .cocktails .cocktail-pic-10 .image-overlay {
+      padding-top: 35%; } }
 
-Backtrace:
-/Users/laurenmastroni/Code/Sites/hana-gin/sass/cocktails.scss:26
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:391:in `run'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/bin/sass:13:in `<top (required)>'
-/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:18:in `load'
-/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:18:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 26 of /Users/laurenmastroni/Code/Sites/hana-gin/sass/cocktails.scss\A \A 21:     background-size: cover;\A 22:     margin: 20px auto;\A 23:     .image-overlay {\A 24:       opacity: 0;\A 25:       background-color: rgba(30, 179, 85, 0.8);\A 26:       color: $white;\A 27:       width: 100%;\A 28:       height: 100%;\A 29:       padding-top: 40%;\A 30:       transition: 0.5s;\A 31:       h6 {"; }
+/*# sourceMappingURL=cocktails.css.map */

@@ -1,3 +1,5 @@
+@import 'variables';
+
 .cocktails {
   min-height: 100vh;
   padding-bottom: 80px;
@@ -5,6 +7,40 @@
   hr {
     width: 12em;
     margin-bottom: 20px;
+  }
+  .modal-dialog {
+    width: 65%;
+    border-radius: 2px;
+    .modal-content {
+      padding: 30px;
+      .modal-body {
+        border: 3px solid $green;
+        border-radius: 3px;
+        padding: 10px 20px 40px 40px;
+        h4 {
+          font-size: 36px;
+          color: $red;
+          margin-bottom: 20px;
+          font-weight: bold;
+        }
+        h5 {
+          font-weight: bold;
+          margin-top: 15px;
+        }
+        ul, ol {
+          text-align: left;
+          color: $black;
+          line-height: 1.5;
+        }
+        img {
+          width: 70%;
+          border-radius: 3px;
+        }
+        .logo {
+          max-width: 150px;
+        }
+      }
+    }
   }
   .cocktail-pic-1,
   .cocktail-pic-2,
