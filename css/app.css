@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -6559,12 +6560,15 @@ hr {
     margin-top: 130px;
     margin-bottom: 180px; }
     .awards .awards-row img {
-      width: 80px;
+      width: 130px;
       margin-top: 40px; }
 
 @media (max-width: 992px) {
   .awards {
     background-attachment: scroll; } }
+@media (max-width: 922px) {
+  .awards .awards-row img {
+    width: 100px; } }
 @media (max-width: 767px) {
   .awards .awards-row {
     margin-top: 40px; } }
@@ -6686,7 +6690,7 @@ hr {
           color: #262626;
           line-height: 1.5; }
         .cocktails .modal-dialog .modal-content .modal-body img {
-          width: 90%; }
+          width: 80%; }
         .cocktails .modal-dialog .modal-content .modal-body .bloom {
           margin-top: 60px; }
         .cocktails .modal-dialog .modal-content .modal-body .logo {
@@ -6974,5 +6978,46 @@ footer {
   footer p {
     font-size: 0.8em;
     line-height: 0.7; }
+
+.page-container {
+  background-color: #FAFAFA;
+  height: 100vh; }
+
+.enquiry-form {
+  display: block;
+  width: 50%;
+  margin: 0 auto; }
+  .enquiry-form form p, .enquiry-form form select {
+    font-family: 'Merriweather', serif;
+    color: #666666;
+    font-size: 18px; }
+  .enquiry-form form p {
+    margin-top: 20px;
+    text-align: center; }
+  .enquiry-form form input, .enquiry-form form textarea, .enquiry-form form select {
+    background-color: #FCFCFC;
+    border: 1px solid #ECECEC;
+    border-radius: 5px;
+    height: 45px; }
+  .enquiry-form form .small-input {
+    width: 100%; }
+  .enquiry-form form textarea {
+    width: 100%;
+    height: 130px; }
+  .enquiry-form form .send-enquiry {
+    background-color: #D7524D;
+    font-family: Arial;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid #D7524D;
+    border-radius: 5px;
+    padding: 8px 25px;
+    margin-top: 20px; }
+
+@media (max-width: 1100px) {
+  .enquiry-form {
+    width: 75%; } }
 
 /*# sourceMappingURL=app.css.map */

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/app.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Enquiry Form</title>
+  </head>
+  <body>
+    <div class="page-container">
+      <div class="enquiry-form">
+        <form action="mail-handler.php" method="post">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6">
+              <p>Your Name:</p>
+              <input class="small-input" type="text" name="name">
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <p>Company Name:</p>
+              <input class="small-input" type="text" name="company">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-6">
+              <p>Company Type:</p>
+              <select class="small-input" name="companytype">
+                <option value="">Category 1</option>
+                <option value="">Category 2</option>
+                <option value="">Category 3</option>
+                <option value="">Category 4</option>
+                <option value="">Category 5</option>
+              </select>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <p>Email Address:</p>
+              <input class="small-input" type="email" name="email">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-6">
+              <p>Phone Number:</p>
+              <input class="small-input" type="tel" name="phone">
+            </div>
+            <div class="col-xs-12 col-sm-6">
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <p>Message:</p>
+              <textarea name="message" rows="8" cols="80"></textarea>
+              <br>
+              <input class="send-enquiry" type="submit" name="submit" value="Send Enquiry">
+            </div>
+          </div>
+
+
+
+
+
+
+
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
