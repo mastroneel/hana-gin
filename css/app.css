@@ -5910,6 +5910,8 @@ hr {
         margin: 10px; }
         .agemodal .message .message-inner form select:focus {
           outline: none; }
+      .agemodal .message .message-inner form select.whiteText {
+        color: #fff; }
       .agemodal .message .message-inner form .remember {
         margin: 15px 0; }
         .agemodal .message .message-inner form .remember label {

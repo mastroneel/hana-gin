@@ -205,6 +205,25 @@
       </div>
     </div>
 </div>
+
+<!-- Changes text to white after selecting an option -->
+<script type="text/javascript">
+  var daySelect = document.getElementById('day');
+  daySelect.onchange = function () {
+    daySelect.className = 'whiteText';
+  }
+
+  var monthSelect = document.getElementById('month');
+  monthSelect.onchange = function () {
+    monthSelect.className = 'whiteText';
+  }
+
+  var yearSelect = document.getElementById('year');
+  yearSelect.onchange = function () {
+    yearSelect.className = 'whiteText';
+  }
+</script>
+
 <!-- end age modal -->
 
 

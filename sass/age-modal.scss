@@ -64,6 +64,9 @@
             outline: none;
           }
         }
+        select.whiteText {
+          color: $white;
+        }
         .remember {
           margin: 15px 0;
           label {
