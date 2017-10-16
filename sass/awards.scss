@@ -19,10 +19,10 @@
   }
   .awards-row {
     margin-top: 130px;
-    margin-bottom: 180px;
+    margin-bottom: 130px;
     img {
+      margin-top: 60px;
       width: 130px;
-      margin-top: 40px;
     }
   }
 }
@@ -47,10 +47,28 @@
   }
 }
 
+@media (min-width: 768px) {
+  .awards {
+    .awards-row {
+      img {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+
+
 @media (max-width: 767px) {
   .awards {
     .awards-row {
-      margin-top: 40px;
+      margin-top: 0;
+      margin-bottom: 80px;
+      img {
+        width: 140px;
+        margin-top: 40px;
+      }
     }
   }
 }

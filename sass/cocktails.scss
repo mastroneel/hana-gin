@@ -89,9 +89,9 @@
         border-radius: 3px;
         padding: 10px 20px 40px 40px;
         h4 {
-          font-size: 36px;
+          font-size: 30px;
           color: $red;
-          margin-bottom: 20px;
+          margin-bottom: 15px;
           font-weight: bold;
         }
         h5 {
@@ -102,16 +102,22 @@
           text-align: left;
           color: $black;
           line-height: 1.5;
+          li {
+            font-size: 0.9em;
+          }
         }
         img {
-          width: 80%;
+          width: 70%;
         }
         .bloom {
           margin-top: 60px;
         }
+        .tall {
+          width: 50%;
+        }
         .logo {
           max-width: 150px;
-          margin-top: 40px;
+          margin-top: 20px;
         }
       }
     }

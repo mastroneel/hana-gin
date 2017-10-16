@@ -5,7 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-@import url("https://fonts.googleapis.com/css?family=Merriweather:300");
+@import url("https://fonts.googleapis.com/css?family=Martel");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -6558,10 +6558,10 @@ hr {
     width: 10em; }
   .awards .awards-row {
     margin-top: 130px;
-    margin-bottom: 180px; }
+    margin-bottom: 130px; }
     .awards .awards-row img {
-      width: 130px;
-      margin-top: 40px; }
+      margin-top: 60px;
+      width: 130px; }
 
 @media (max-width: 992px) {
   .awards {
@@ -6569,9 +6569,18 @@ hr {
 @media (max-width: 922px) {
   .awards .awards-row img {
     width: 100px; } }
+@media (min-width: 768px) {
+  .awards .awards-row img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); } }
 @media (max-width: 767px) {
   .awards .awards-row {
-    margin-top: 40px; } }
+    margin-top: 0;
+    margin-bottom: 80px; }
+    .awards .awards-row img {
+      width: 140px;
+      margin-top: 40px; } }
 @media (max-width: 440px) {
   .awards .button {
     width: 300px;
@@ -6678,9 +6687,9 @@ hr {
         border-radius: 3px;
         padding: 10px 20px 40px 40px; }
         .cocktails .modal-dialog .modal-content .modal-body h4 {
-          font-size: 36px;
+          font-size: 30px;
           color: #D61F35;
-          margin-bottom: 20px;
+          margin-bottom: 15px;
           font-weight: bold; }
         .cocktails .modal-dialog .modal-content .modal-body h5 {
           font-weight: bold;
@@ -6689,13 +6698,17 @@ hr {
           text-align: left;
           color: #262626;
           line-height: 1.5; }
+          .cocktails .modal-dialog .modal-content .modal-body ul li, .cocktails .modal-dialog .modal-content .modal-body ol li {
+            font-size: 0.9em; }
         .cocktails .modal-dialog .modal-content .modal-body img {
-          width: 80%; }
+          width: 70%; }
         .cocktails .modal-dialog .modal-content .modal-body .bloom {
           margin-top: 60px; }
+        .cocktails .modal-dialog .modal-content .modal-body .tall {
+          width: 50%; }
         .cocktails .modal-dialog .modal-content .modal-body .logo {
           max-width: 150px;
-          margin-top: 40px; }
+          margin-top: 20px; }
 
 @media (max-width: 1247px) {
   .cocktails .cocktail-row {
@@ -6996,7 +7009,7 @@ footer {
   width: 50%;
   margin: 0 auto; }
   .enquiry-form form p, .enquiry-form form select {
-    font-family: 'Merriweather', serif;
+    font-family: 'Martel', serif;
     color: #666666;
     font-size: 18px; }
   .enquiry-form form p {
