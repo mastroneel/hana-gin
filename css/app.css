@@ -6819,97 +6819,105 @@ hr {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed; }
-  .location .title {
+  .location .location-title {
     margin-bottom: 40px; }
   .location hr {
     width: 28em; }
-  .location h6, .location p {
-    color: #fff; }
-  .location h6 {
-    font-size: 1.5em; }
-  .location p {
-    text-align: left;
-    margin-top: 45px; }
-    .location p span {
-      font-weight: bold; }
-  .location .circle {
-    height: 1em;
-    width: 1em;
-    background-color: #D61F35;
-    border-radius: 50%;
-    margin-bottom: -62px;
-    margin-left: -20px; }
-  .location .addresses {
-    width: 50%; }
-    .location .addresses .col-md-6 {
-      padding-left: 80px;
-      margin-top: 40px; }
-  .location .map {
-    height: 460px;
-    display: inline-block;
-    overflow: hidden; }
 
-@media (max-width: 992px) {
-  .location {
-    background-attachment: scroll; } }
-@media (max-width: 575px) {
-  .location iframe {
-    width: 400px;
-    height: 400px; }
-  .location .addresses {
-    margin-top: -90px; } }
-@media (max-width: 992px) {
-  .location .addresses {
-    width: 100%; }
-    .location .addresses p {
-      margin-left: 40%; }
-    .location .addresses .circle {
-      margin-bottom: -62px;
-      margin-left: 37%; } }
-@media (max-width: 752px) {
-  .location .addresses {
-    width: 100%; }
-    .location .addresses p {
-      margin-left: 35%; }
-    .location .addresses .circle {
-      margin-bottom: -62px;
-      margin-left: 31%; } }
-@media (max-width: 595px) {
-  .location .addresses {
-    width: 100%; }
-    .location .addresses p {
-      margin-left: 30%; }
-    .location .addresses .circle {
-      margin-bottom: -62px;
-      margin-left: 25%; } }
-@media (max-width: 475px) {
-  .location .addresses {
-    width: 100%; }
-    .location .addresses p {
-      margin-left: 20%; }
-    .location .addresses .circle {
-      margin-bottom: -62px;
-      margin-left: 12%; } }
-@media (max-width: 370px) {
-  .location .addresses {
-    width: 100%; }
-    .location .addresses p {
-      margin-left: 10%; }
-    .location .addresses .circle {
-      margin-bottom: -62px;
-      margin-left: 0%; } }
 @media (max-width: 430px) {
-  .location .title h2 {
-    font-size: 1.5em; }
-  .location hr {
-    width: 20em; }
-  .location iframe {
-    width: 300px;
+  .location .location-title {
+    margin-bottom: 10px; }
+    .location .location-title h2 {
+      font-size: 1.5em; }
+    .location .location-title hr {
+      width: 20em; } }
+#map-canvas, #panel {
+  height: 500px; }
+
+#map-canvas {
+  width: 90%;
+  margin-left: 70px; }
+
+#panel {
+  width: 260px;
+  margin: 0 auto; }
+  #panel ul {
+    list-style: none; }
+    #panel ul li {
+      color: #fff;
+      font-size: 18px;
+      text-align: left;
+      margin-top: 30px; }
+    #panel ul li::before {
+      content: '';
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      -moz-border-radius: 7.5px;
+      -webkit-border-radius: 7.5px;
+      border-radius: 7.5px;
+      background-color: #D61F35;
+      margin-left: -25px;
+      margin-bottom: -33px; }
+
+.storelocator-panel {
+  overflow: auto; }
+
+.storelocator-panel .location-search input {
+  width: 230px;
+  height: 30px;
+  background: transparent;
+  border: 2px solid #D61F35;
+  border-radius: 3px;
+  color: #D61F35;
+  padding-left: 8px; }
+  .storelocator-panel .location-search input:focus {
+    outline: none; }
+  .storelocator-panel .location-search input::-webkit-input-placeholder {
+    color: #D61F35 !important; }
+  .storelocator-panel .location-search input:-moz-placeholder {
+    /* Firefox 18- */
+    color: #D61F35 !important; }
+  .storelocator-panel .location-search input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #D61F35 !important; }
+  .storelocator-panel .location-search input:-ms-input-placeholder {
+    color: #D61F35 !important; }
+
+.storelocator-panel .store-list .no-stores {
+  color: grey; }
+
+.store .title {
+  padding-top: 5px; }
+
+.store .action {
+  font-size: 0.8em;
+  margin-right: 0.5em; }
+
+@media (max-width: 987px) {
+  #map-canvas {
+    margin: 0 auto; } }
+@media (max-width: 767px) {
+  #map-canvas {
+    width: 60%;
+    height: 400px; }
+
+  #panel {
+    margin-top: 40px; } }
+@media (max-width: 660px) {
+  #map-canvas {
+    width: 80%; } }
+@media (max-width: 540px) {
+  #map-canvas {
+    width: 90%; } }
+@media (max-width: 429px) {
+  #map-canvas {
+    width: 95%;
     height: 300px; } }
-@media (max-width: 346px) {
-  .location iframe {
-    width: 280px;
-    height: 280px; } }
+@media (max-width: 375px) {
+  #map-canvas {
+    width: 98%;
+    height: 290px; } }
 .contact {
   text-align: center;
   height: 100vh; }

@@ -1,0 +1,159 @@
+#map-canvas, #panel {
+  height: 500px;
+}
+
+#map-canvas {
+  width: 90%;
+  margin-left: 70px;
+}
+
+#panel {
+  width: 260px;
+  margin: 0 auto;
+  ul {
+    list-style: none;
+    li {
+      color: $white;
+      font-size: 18px;
+      text-align: left;
+      margin-top: 30px;
+    }
+    li::before{
+       content: '';
+       display: inline-block;
+       width: 15px;
+       height: 15px;
+       -moz-border-radius: 7.5px;
+       -webkit-border-radius: 7.5px;
+       border-radius: 7.5px;
+       background-color: $red;
+       margin-left: -25px;
+       margin-bottom: -33px;
+    }
+  }
+}
+
+.storelocator-panel {
+  overflow: auto;
+}
+//
+// .storelocator-panel .store-list {
+//   margin: 0;
+//   padding: 0;
+// }
+//
+// .storelocator-panel .store-list li,
+// .storelocator-panel .directions-panel {
+//   padding: 5px;
+// }
+// .storelocator-panel .directions-panel {
+//   font-size: 0.8em;
+// }
+//
+// .storelocator-panel .store-list li.store:hover {
+//   cursor: pointer;
+//   background: #eee;
+// }
+//
+// .storelocator-panel .store-list li.highlighted,
+// .storelocator-panel .store-list li.highlighted:hover {
+//   background: #ccf;
+// }
+//
+// .storelocator-panel .directions {
+//   display: none;
+// }
+//
+// .storelocator-panel .location-search {
+//   padding: 5px;
+// }
+//
+.storelocator-panel .location-search input {
+  width: 230px;
+  height: 30px;
+  background: transparent;
+  border: 2px solid $red;
+  border-radius: 3px;
+  color: $red;
+  padding-left: 8px;
+  &:focus {
+    outline: none;
+  }
+  &::-webkit-input-placeholder {
+  color: $red !important;
+  }
+
+  &:-moz-placeholder { /* Firefox 18- */
+  color: $red !important;
+  }
+
+  &::-moz-placeholder {  /* Firefox 19+ */
+  color: $red !important;
+  }
+
+  &:-ms-input-placeholder {
+  color: $red !important;
+  }
+}
+
+.storelocator-panel .store-list .no-stores {
+  color: grey;
+}
+
+.store {
+  .title {
+    padding-top: 5px;
+  }
+}
+
+.store .action {
+  font-size: 0.8em;
+  margin-right: 0.5em;
+}
+
+
+// *************
+// Media queries
+// *************
+
+@media (max-width: 987px) {
+  #map-canvas {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  #map-canvas {
+    width: 60%;
+    height: 400px;
+  }
+  #panel {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 660px) {
+  #map-canvas {
+    width: 80%;
+  }
+}
+
+@media (max-width: 540px) {
+  #map-canvas {
+    width: 90%;
+  }
+}
+
+@media (max-width: 429px) {
+  #map-canvas {
+    width: 95%;
+    height: 300px;
+  }
+}
+
+@media (max-width: 375px) {
+  #map-canvas {
+    width: 98%;
+    height: 290px;
+  }
+}
