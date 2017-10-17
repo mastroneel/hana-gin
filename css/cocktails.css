@@ -18,7 +18,8 @@
     height: 150px;
     width: 150px;
     background-size: cover;
-    margin: 20px auto; }
+    margin: 20px auto;
+    cursor: pointer; }
     .cocktails .cocktail-pic-1 .image-overlay,
     .cocktails .cocktail-pic-2 .image-overlay,
     .cocktails .cocktail-pic-3 .image-overlay,
