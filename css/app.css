@@ -6808,7 +6808,7 @@ hr {
   margin-left: 70px; }
 
 #panel {
-  width: 290px;
+  width: 300px;
   margin: 0 auto; }
   #panel ul {
     list-style: none; }
@@ -6869,7 +6869,7 @@ input.directions-to {
   border: 1px solid #1EB355;
   color: #fff;
   border-radius: 3px;
-  padding: 5px 10px;
+  padding: 5px 15px;
   margin-right: 5px; }
 .directions-panel form .close-directions {
   margin-top: 15px;
@@ -6878,7 +6878,7 @@ input.directions-to {
   height: 30px;
   color: white;
   border-radius: 3px;
-  padding: 7px 5px;
+  padding: 7px 10px;
   margin-left: 5px; }
 
 .adp, .adp table {
