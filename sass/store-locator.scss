@@ -8,7 +8,7 @@
 }
 
 #panel {
-  width: 260px;
+  width: 290px;
   margin: 0 auto;
   ul {
     list-style: none;
@@ -63,6 +63,48 @@
   &:-ms-input-placeholder {
   color: $red !important;
   }
+}
+
+input.directions-to {
+  border: 2px solid $red;
+  border-radius: 3px;
+  background: none;
+  margin-top: 15px;
+  height: 30px;
+  color: $red;
+  padding-left: 8px;
+  width: 175px;
+}
+
+.directions-panel {
+  form {
+    input[type="submit"] {
+      margin-top: 15px;
+      background-color: $green;
+      border: 1px solid $green;
+      color: $white;
+      border-radius: 3px;
+      padding: 5px 10px;
+      margin-right: 5px;
+    }
+    .close-directions {
+      margin-top: 15px;
+      background-color: $green;
+      border: 1px solid $green;
+      height: 30px;
+      color: white;
+      border-radius: 3px;
+      padding: 7px 5px;
+      margin-left: 5px;
+    }
+  }
+}
+
+.adp, .adp table {
+  background-color: $white;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 3px;
 }
 
 .storelocator-panel .store-list .no-stores {

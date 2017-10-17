@@ -114,3 +114,7 @@ MedicareDataSource.prototype.toObject_ = function(headings, row) {
   }
   return result;
 };
+
+$('a.action').click(function(e) {
+    e.preventDefault();
+});

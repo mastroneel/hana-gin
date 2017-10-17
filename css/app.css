@@ -6264,7 +6264,8 @@ hr {
 
 @media (max-width: 1099px) {
   .hero {
-    padding-top: 150px; }
+    padding-top: 150px;
+    background-image: url("../img/hero-image-medium.png"); }
     .hero h1 {
       font-size: 4em; } }
 @media (max-width: 903px) {
@@ -6272,70 +6273,22 @@ hr {
     padding-left: 5%; }
     .hero h1 {
       font-size: 3.5em; } }
+@media (max-width: 812px) {
+  .hero {
+    background-image: url("../img/hero-image-small.png"); } }
 @media (max-width: 650px) {
   .hero {
-    background-image: url("../img/mobile-hero-background.jpg"); } }
+    background-image: url("../img/hero-image-mobile.jpg"); } }
 @media (max-width: 435px) {
   .hero {
-    padding-top: 80px; }
+    padding-top: 100px; }
     .hero h1 {
       font-size: 2.6em; } }
-@media (min-width: 629px) and (max-width: 994px) {
-  .hero .modal-lg {
-    width: 98%; } }
-@media (max-width: 628px) {
-  .hero .modal .modal-body {
-    padding: 12px; }
-    .hero .modal .modal-body .modal-inner {
-      padding: 15px; }
-      .hero .modal .modal-body .modal-inner h3 {
-        font-size: 3em; }
-      .hero .modal .modal-body .modal-inner h5 {
-        font-size: 1.5em; }
-      .hero .modal .modal-body .modal-inner img {
-        margin-top: -20px;
-        max-width: 150px; }
-      .hero .modal .modal-body .modal-inner form input {
-        border: 2px solid #1EB355;
-        height: 40px;
-        margin: 10px 5px 10px 5px;
-        font-size: 28px; }
-      .hero .modal .modal-body .modal-inner form button {
-        border: 2px solid #1EB355;
-        height: 45px;
-        padding: 5px 5px 10px 5px;
-        font-size: 28px;
-        margin-left: 5px; }
-        .hero .modal .modal-body .modal-inner form button:focus {
-          outline: none; }
-      @supports (zoom: 2) {
-        .hero .modal .modal-body .modal-inner form input[type=checkbox] {
-          zoom: 2;
-          margin-top: -5px; } }
-      @supports not (zoom: 2) {
-        .hero .modal .modal-body .modal-inner form input[type=checkbox] {
-          transform: scale(2); } }
-      .hero .modal .modal-body .modal-inner form label {
-        /* fix vertical align issues */
-        display: inline-block;
-        vertical-align: top;
-        margin-top: 20px; }
-      .hero .modal .modal-body .modal-inner form .month, .hero .modal .modal-body .modal-inner form .day {
-        width: 67px; }
-      .hero .modal .modal-body .modal-inner form .year {
-        width: 90px; }
-      .hero .modal .modal-body .modal-inner form ::-webkit-input-placeholder {
-        /* Chrome/Opera/Safari */
-        font-size: 28px; }
-      .hero .modal .modal-body .modal-inner form ::-moz-placeholder {
-        /* Firefox 19+ */
-        font-size: 28px; }
-      .hero .modal .modal-body .modal-inner form :-ms-input-placeholder {
-        /* IE 10+ */
-        font-size: 28px; }
-      .hero .modal .modal-body .modal-inner form :-moz-placeholder {
-        /* Firefox 18- */
-        font-size: 28px; } }
+@media (max-width: 375px) {
+  .hero {
+    padding-top: 100px; }
+    .hero h1 {
+      font-size: 2em; } }
 .our-story {
   text-align: center;
   min-height: 100vh;
@@ -6855,7 +6808,7 @@ hr {
   margin-left: 70px; }
 
 #panel {
-  width: 260px;
+  width: 290px;
   margin: 0 auto; }
   #panel ul {
     list-style: none; }
@@ -6899,6 +6852,40 @@ hr {
     color: #D61F35 !important; }
   .storelocator-panel .location-search input:-ms-input-placeholder {
     color: #D61F35 !important; }
+
+input.directions-to {
+  border: 2px solid #D61F35;
+  border-radius: 3px;
+  background: none;
+  margin-top: 15px;
+  height: 30px;
+  color: #D61F35;
+  padding-left: 8px;
+  width: 175px; }
+
+.directions-panel form input[type="submit"] {
+  margin-top: 15px;
+  background-color: #1EB355;
+  border: 1px solid #1EB355;
+  color: #fff;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin-right: 5px; }
+.directions-panel form .close-directions {
+  margin-top: 15px;
+  background-color: #1EB355;
+  border: 1px solid #1EB355;
+  height: 30px;
+  color: white;
+  border-radius: 3px;
+  padding: 7px 5px;
+  margin-left: 5px; }
+
+.adp, .adp table {
+  background-color: #fff;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 3px; }
 
 .storelocator-panel .store-list .no-stores {
   color: grey; }
