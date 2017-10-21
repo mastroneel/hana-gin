@@ -8,7 +8,7 @@
 }
 
 #panel {
-  width: 300px;
+  width: 500px;
   margin: 0 auto;
   ul {
     list-style: none;
@@ -38,8 +38,8 @@
 }
 
 .storelocator-panel .location-search input {
-  width: 230px;
-  height: 30px;
+  width: 350px;
+  height: 40px;
   background: transparent;
   border: 2px solid $red;
   border-radius: 3px;
@@ -49,6 +49,7 @@
     outline: none;
   }
   &::-webkit-input-placeholder {
+    visibility: hidden;
   color: $red !important;
   }
 
@@ -127,6 +128,16 @@ input.directions-to {
 // Media queries
 // *************
 
+@media (max-width: 1032px) {
+  #panel {
+    width: 300px;
+  }
+  .storelocator-panel .location-search input {
+    width: 280px;
+  }
+}
+
+
 @media (max-width: 987px) {
   #map-canvas {
     margin: 0 auto;
@@ -166,5 +177,25 @@ input.directions-to {
   #map-canvas {
     width: 98%;
     height: 290px;
+  }
+}
+
+@media (max-width: 330px) {
+  .store .action {
+    font-size: 0.7em;
+    margin-right: 0.5em;
+  }
+}
+
+
+
+// **************
+// Height
+// Media queries
+// **************
+
+@media (min-height: 1300px) {
+  .location {
+    min-height: 0;
   }
 }

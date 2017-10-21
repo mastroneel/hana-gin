@@ -18,11 +18,10 @@
     width: 10em;
   }
   .awards-row {
-    margin-top: 130px;
-    margin-bottom: 130px;
+    margin-top: 100px;
     img {
       margin-top: 60px;
-      width: 130px;
+      width: 190px;
     }
   }
 }
@@ -30,6 +29,26 @@
 // *************
 // Media queries
 // *************
+
+@media (max-width: 1245px) {
+  .awards {
+    .awards-row {
+      img {
+        width: 160px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1105px) {
+  .awards {
+    .awards-row {
+      img {
+        width: 140px;
+      }
+    }
+  }
+}
 
 @media (max-width: 992px) {
   .awards {
@@ -41,7 +60,7 @@
   .awards {
     .awards-row {
       img {
-        width: 100px;
+        width: 120px;
       }
     }
   }
@@ -66,7 +85,7 @@
       margin-top: 0;
       margin-bottom: 80px;
       img {
-        width: 140px;
+        width: 190px;
         margin-top: 40px;
       }
     }
@@ -88,5 +107,16 @@
       font-size: 10px;
       padding: 10px 3px;
     }
+  }
+}
+
+// **************
+// Height
+// Media queries
+// **************
+
+@media (min-height: 1300px) {
+  .awards {
+    min-height: 0;
   }
 }

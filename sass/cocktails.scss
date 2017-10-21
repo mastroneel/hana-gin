@@ -88,12 +88,20 @@
       .modal-body {
         border: 3px solid $green;
         border-radius: 3px;
-        padding: 10px 20px 40px 40px;
+        padding: 10px 20px 30px 30px;
         h4 {
           font-size: 30px;
           color: $red;
-          margin-bottom: 15px;
+          margin-bottom: 10px;
           font-weight: bold;
+        }
+        .prev-next {
+          margin: 5px;
+          color: $white;
+          background-color: $green;
+          border: 1px solid $green;
+          border-radius: 3px;
+          padding: 5px 10px;
         }
         h5 {
           font-weight: bold;
@@ -104,18 +112,19 @@
           color: $black;
           line-height: 1.5;
           li {
-            font-size: 0.9em;
+            font-size: 12px;;
           }
         }
         img {
-          width: 70%;
+          width: 80%;
+          margin-top: 30px;
         }
-        .bloom {
-          margin-top: 60px;
-        }
-        .tall {
-          width: 50%;
-        }
+        // .bloom {
+        //   margin-top: 60px;
+        // }
+        // .tall {
+        //   width: 50%;
+        // }
         .logo {
           max-width: 150px;
           margin-top: 20px;
@@ -216,6 +225,41 @@
 // Media queries for modal
 // ***********************
 
+@media (min-width: 993px) {
+  .cocktails {
+    // Modal - specific
+    #cucumberGinTonicModal, #hanaGinMargaritaModal, #honeyHanaModal {
+      .modal-dialog {
+        .modal-content {
+          .modal-body {
+            ul, ol {
+              li {
+                font-size: 14px;
+              }
+            }
+            h5 {
+              margin-top: 30px;
+            }
+          }
+        }
+      }
+    }
+    #raspberryBloomModal, #whitePeachModal {
+      .modal-dialog {
+        .modal-content {
+          .modal-body {
+            ul, ol {
+              li {
+                font-size: 11px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 992px) {
   .cocktails {
     .modal-dialog {
@@ -225,9 +269,15 @@
           text-align: center;
           img {
             width: 25%;
+            margin-top: 10px;
           }
-          .bloom {
-            margin-top: 5px;
+          h4 {
+            font-size: 1.5em;
+          }
+          ul, ol {
+            li {
+              font-size: 10px;
+            }
           }
           h5 {
             text-align: left;
@@ -244,9 +294,6 @@
       .modal-content {
         .modal-body {
           padding: 15px;
-          img {
-            width: 40%;
-          }
         }
       }
     }
@@ -268,20 +315,6 @@
   }
 }
 
-@media (max-width: 710px) {
-  .cocktails {
-    .modal-dialog {
-      .modal-content {
-        .modal-body {
-          img {
-            width: 60%;
-          }
-        }
-      }
-    }
-  }
-}
-
 @media (max-width: 435px) {
   .cocktails {
     .modal-dialog {
@@ -289,10 +322,10 @@
         padding: 15px;
         .modal-body {
           h4 {
-            font-size: 25px;
+            font-size: 18px;
           }
           img {
-            width: 70%;
+            width: 50%;
           }
           ul, ol {
             font-size: 0.9em;
@@ -300,5 +333,17 @@
         }
       }
     }
+  }
+}
+
+
+// **************
+// Height
+// Media queries
+// **************
+
+@media (min-height: 1300px) {
+  .cocktails {
+    min-height: 0;
   }
 }

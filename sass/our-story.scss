@@ -1,3 +1,5 @@
+@import 'variables';
+
 .our-story {
   text-align: center;
   min-height: 100vh;
@@ -20,16 +22,20 @@
   p {
     color: $white;
     margin: 0 auto;
-    width: 45%;
+    width: 75%;
     text-align: left;
     font-size: 1.5em;
     line-height: 2;
-    margin-top: 50px;
+    margin-top: 15px;
     letter-spacing: 1px;
     span {
       color: $green;
       text-transform: uppercase;
     }
+  }
+  img {
+    width: 370px;
+    margin-top: 20px;
   }
 }
 
@@ -38,10 +44,10 @@
 // Media queries
 // *************
 
-@media (max-width: 1099px) {
+@media (min-width: 1500px) {
   .our-story {
     p {
-      width: 60%;
+      width: 50%;
     }
   }
 }
@@ -52,11 +58,14 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .our-story {
     p {
       width: 75%;
-      font-size: 1.4em;
+      font-size: 1.5em;
+    }
+    img {
+      display: none;
     }
   }
 }
@@ -71,12 +80,95 @@
   }
 }
 
+@media (max-width: 414px) {
+  .our-story {
+    p {
+      width: 90%;
+      margin-top: 20px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .our-story {
+    .title {
+      padding-top: 30px;
+    }
+    p {
+      font-size: 1.2em;
+    }
+  }
+}
+
 @media (max-width: 360px) {
   .our-story {
     p {
-      width: 85%;
       font-size: 1.1em;
-      margin-top: 40px;
+    }
+  }
+}
+
+@media (max-width: 330px) {
+  .our-story {
+    padding-bottom: 40px;
+    .title {
+      padding-top: 30px;
+      h2 {
+        font-size: 1.6em;
+      }
+      hr {
+        width: 10em;
+      }
+    }
+    p {
+      font-size: 0.98em;
+    }
+  }
+}
+
+
+// **************
+// Height
+// Media queries
+// **************
+@media (min-height: 1300px) {
+  .our-story {
+    min-height: 0;
+    padding-bottom: 80px;
+    p {
+      font-size: 1.8em;
+    }
+  }
+}
+
+
+@media (max-height: 414px) {
+  .our-story {
+    padding-bottom: 20px;
+    .title {
+      padding-top: 30px;
+    }
+    p {
+      width: 98%;
+      margin-top: 15px;
+      font-size: 1.2em;
+    }
+  }
+}
+
+@media (max-height: 375px) {
+  .our-story {
+    .title {
+      padding-top: 20px;
+      h2 {
+        font-size: 1.7em;
+      }
+      hr {
+        width: 10em;
+      }
+    }
+    p {
+      font-size: 1.1em;
     }
   }
 }
