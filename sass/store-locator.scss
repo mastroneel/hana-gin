@@ -10,6 +10,7 @@
 #panel {
   width: 500px;
   margin: 0 auto;
+  text-align: left;
   ul {
     list-style: none;
     li {
@@ -194,8 +195,33 @@ input.directions-to {
 // Media queries
 // **************
 
+@media (min-width: 1200px) and (min-height: 1050px) {
+    #map-canvas {
+      width: 90%;
+      height: 700px;
+    }
+    #panel {
+      width: 600px;
+      height: 700px;
+    }
+}
+
+@media (min-width: 1200px) and (min-height: 1200px) {
+    #map-canvas {
+      width: 90%;
+      height: 800px;
+    }
+    #panel {
+      width: 700px;
+      height: 800px;
+    }
+}
+
 @media (min-height: 1300px) {
-  .location {
-    min-height: 0;
-  }
+    #map-canvas {
+      margin-top: 150px
+    }
+    #panel {
+      margin-top: 150px;
+    }
 }

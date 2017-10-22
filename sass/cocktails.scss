@@ -88,7 +88,7 @@
       .modal-body {
         border: 3px solid $green;
         border-radius: 3px;
-        padding: 10px 20px 30px 30px;
+        padding: 10px 10px 30px 10px;
         h4 {
           font-size: 30px;
           color: $red;
@@ -96,12 +96,25 @@
           font-weight: bold;
         }
         .prev-next {
-          margin: 5px;
-          color: $white;
-          background-color: $green;
-          border: 1px solid $green;
-          border-radius: 3px;
-          padding: 5px 10px;
+          color: $green;
+          background-color: $white;
+          border: 1px solid $white;
+          font-size: 50px;
+          margin-top: 120px;
+          transition: 0.2s;
+          &:hover {
+            color: $red;
+            transition: 0.2s;
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+        .prev {
+          float: left;
+        }
+        .next {
+          float: right;
         }
         h5 {
           font-weight: bold;
@@ -217,6 +230,89 @@
         padding-top: 35%;
       }
     }
+  }
+}
+
+// **************
+// Height
+// Media queries
+// **************
+
+@media (min-width: 1200px) and (min-height: 1050px) {
+  .cocktails {
+    .cocktail-row {
+      width: 100%;
+      margin-top: 110px;
+      .cocktail-pic-1,
+      .cocktail-pic-2,
+      .cocktail-pic-3,
+      .cocktail-pic-4,
+      .cocktail-pic-5,
+      .cocktail-pic-6,
+      .cocktail-pic-7,
+      .cocktail-pic-8,
+      .cocktail-pic-9,
+      .cocktail-pic-10 {
+        height: 250px;
+        width: 250px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) and (min-height: 1200px) {
+  .cocktails {
+    .cocktail-row {
+      width: 85%;
+      margin-top: 150px;
+      .cocktail-pic-1,
+      .cocktail-pic-2,
+      .cocktail-pic-3,
+      .cocktail-pic-4,
+      .cocktail-pic-5,
+      .cocktail-pic-6,
+      .cocktail-pic-7,
+      .cocktail-pic-8,
+      .cocktail-pic-9,
+      .cocktail-pic-10 {
+        height: 250px;
+        width: 250px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) and (min-height: 1300px) {
+  .cocktails {
+    .cocktail-row {
+      width: 100%;
+      margin-top: 170px;
+      .cocktail-pic-1,
+      .cocktail-pic-2,
+      .cocktail-pic-3,
+      .cocktail-pic-4,
+      .cocktail-pic-5,
+      .cocktail-pic-6,
+      .cocktail-pic-7,
+      .cocktail-pic-8,
+      .cocktail-pic-9,
+      .cocktail-pic-10 {
+        height: 350px;
+        width: 350px;
+      }
+    }
+  }
+}
+
+@media (width: 1024px) and (height: 1366px) {
+  .cocktails {
+    min-height: 0;
+  }
+}
+
+@media (width: 768px) and (height: 1024px) {
+  .cocktails {
+    min-height: 0;
   }
 }
 
@@ -336,14 +432,245 @@
   }
 }
 
-
-// **************
-// Height
-// Media queries
-// **************
-
-@media (min-height: 1300px) {
+@media (max-width: 992px) {
   .cocktails {
-    min-height: 0;
+    .modal-dialog {
+      .modal-content {
+        .modal-body {
+          .prev-next-lg-screens {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .cocktails {
+    .modal-dialog {
+      .modal-content {
+        .modal-body {
+          .prev-next-sm-screens {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .cocktails {
+    .modal-dialog {
+      .modal-content {
+        .modal-body {
+          .col-xs-1 {
+            padding: 0;
+          }
+          .prev-next {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ******************************
+// Height media queries for modal
+// ******************************
+@media (min-width: 1500px) and (min-height: 1050px) {
+  .cocktails {
+    .modal-dialog {
+      .modal-content {
+        padding: 25px;
+        .modal-body {
+          .logo {
+            width: 250px;
+            max-width: 250px;
+            margin-top: 40px;
+          }
+          .prev-next {
+            margin-top: 200px;
+          }
+          h5 {
+            font-size: 20px;
+          }
+          h4 {
+            font-size: 50px;
+          }
+          ul, ol {
+            li {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+    #cucumberGinTonicModal, #hanaGinMargaritaModal, #honeyHanaModal {
+      .modal-dialog {
+        .modal-content {
+          .modal-body {
+            ul, ol {
+              li {
+                font-size: 25px;
+              }
+            }
+            h5 {
+              margin-top: 30px;
+              font-size: 30px;
+            }
+            h4 {
+              font-size: 50px;
+            }
+          }
+        }
+      }
+    }
+    #raspberryBloomModal, #whitePeachModal {
+      .modal-dialog {
+        .modal-content {
+          .modal-body {
+            ul, ol {
+              li {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1500px) and (min-height: 1200px) {
+  .cocktails {
+    .modal-dialog {
+      .modal-content {
+        padding: 25px;
+        .modal-body {
+          .prev-next {
+            margin-top: 250px;
+            font-size: 70px;
+          }
+          .logo {
+            width: 300px;
+            max-width: 300px;
+            margin-top: 60px;
+          }
+          h5 {
+            font-size: 28px;
+          }
+          h4 {
+            font-size: 70px;
+          }
+          ul, ol {
+            li {
+              font-size: 28px;
+            }
+          }
+        }
+      }
+    }
+    #cucumberGinTonicModal, #hanaGinMargaritaModal, #honeyHanaModal {
+      .modal-dialog {
+        .modal-content {
+          .modal-body {
+            ul, ol {
+              li {
+                font-size: 35px;
+              }
+            }
+            h5 {
+              margin-top: 30px;
+              font-size: 40px;
+            }
+            h4 {
+              font-size: 70px;
+            }
+          }
+        }
+      }
+    }
+    #raspberryBloomModal, #whitePeachModal {
+      .modal-dialog {
+        .modal-content {
+          .modal-body {
+            ul, ol {
+              li {
+                font-size: 24px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: 1500px) and (min-height: 1300px) {
+  .cocktails {
+    .modal-dialog {
+      .modal-content {
+        padding: 25px;
+        .modal-body {
+          .prev-next {
+            font-size: 90px;
+            margin-top: 300px;
+          }
+          .logo {
+            width: 300px;
+            max-width: 300px;
+            margin-top: 80px;
+          }
+          h5 {
+            font-size: 40px;
+          }
+          h4 {
+            font-size: 80px;
+          }
+          ul, ol {
+            li {
+              font-size: 35px;
+            }
+          }
+        }
+      }
+    }
+    #cucumberGinTonicModal, #hanaGinMargaritaModal, #honeyHanaModal {
+      .modal-dialog {
+        .modal-content {
+          .modal-body {
+            ul, ol {
+              li {
+                font-size: 45px;
+              }
+            }
+            h5 {
+              margin-top: 30px;
+              font-size: 40px;
+            }
+            h4 {
+              font-size: 80px;
+            }
+          }
+        }
+      }
+    }
+    #raspberryBloomModal, #whitePeachModal {
+      .modal-dialog {
+        .modal-content {
+          .modal-body {
+            ul, ol {
+              li {
+                font-size: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }

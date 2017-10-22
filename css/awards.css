@@ -14,20 +14,14 @@
     margin-top: 100px; }
     .awards .awards-row img {
       margin-top: 60px;
-      width: 190px; }
+      width: 260px; }
 
-@media (max-width: 1245px) {
-  .awards .awards-row img {
-    width: 160px; } }
-@media (max-width: 1105px) {
-  .awards .awards-row img {
-    width: 140px; } }
 @media (max-width: 992px) {
   .awards {
     background-attachment: scroll; } }
 @media (max-width: 922px) {
   .awards .awards-row img {
-    width: 120px; } }
+    width: 230px; } }
 @media (min-width: 768px) {
   .awards .awards-row img {
     position: relative;
@@ -38,7 +32,7 @@
     margin-top: 0;
     margin-bottom: 80px; }
     .awards .awards-row img {
-      width: 190px;
+      width: 270px;
       margin-top: 40px; } }
 @media (max-width: 440px) {
   .awards .button {
@@ -48,7 +42,25 @@
   .awards .button {
     font-size: 10px;
     padding: 10px 3px; } }
-@media (min-height: 1300px) {
+@media (min-width: 1200px) and (min-height: 1050px) {
+  .awards .awards-row {
+    padding: 0 200px;
+    margin-top: 100px; }
+    .awards .awards-row img {
+      width: 300px; } }
+@media (min-width: 1200px) and (min-height: 1200px) {
+  .awards .awards-row {
+    padding: 0 300px;
+    margin-top: 200px; }
+    .awards .awards-row img {
+      width: 350px; } }
+@media (min-width: 1200px) and (min-height: 1300px) {
+  .awards {
+    min-height: 0; } }
+@media (width: 1024px) and (height: 1366px) {
+  .awards {
+    min-height: 0; } }
+@media (width: 768px) and (height: 1024px) {
   .awards {
     min-height: 0; } }
 

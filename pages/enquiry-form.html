@@ -12,31 +12,35 @@
         <form action="mail-handler.php" method="post">
           <div class="row">
             <div class="col-xs-12 col-sm-6">
-              <p>Your Name:</p>
-              <input class="small-input" type="text" name="name">
+              <p>First Name:</p>
+              <input class="small-input" type="text" name="firstname">
             </div>
+            <div class="col-xs-12 col-sm-6">
+              <p>Last Name:</p>
+              <input class="small-input" type="text" name="lastname">
+            </div>
+          </div>
+          <div class="row">
             <div class="col-xs-12 col-sm-6">
               <p>Company Name:</p>
               <input class="small-input" type="text" name="company">
             </div>
-          </div>
-          <div class="row">
             <div class="col-xs-12 col-sm-6">
               <p>Company Type:</p>
               <select class="small-input" name="companytype">
                 <option value="">Retailer</option>
                 <option value="">Distributor</option>
-                <option value="">Individual</option>
+                <option value="">Individual/Customer</option>
                 <option value="">Press/Media</option>
                 <option value="">Other</option>
               </select>
             </div>
+          </div>
+          <div class="row">
             <div class="col-xs-12 col-sm-6">
               <p>Email Address:</p>
               <input class="small-input" type="email" name="email">
             </div>
-          </div>
-          <div class="row">
             <div class="col-xs-12 col-sm-6">
               <p>Phone Number:</p>
               <input class="small-input" type="tel" name="phone">

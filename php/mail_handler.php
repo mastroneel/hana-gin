@@ -3,6 +3,8 @@ if(isset($_POST['submit'])){
     $to = "hana@brandedspiritsusa.com"; // this is your Email address
     $from = $_POST['email']; // this is the sender's Email address
     $name = $_POST['name'];
+    $company = $_POST['company'];
+    $companytype = $_POST['companytype'];
     $phone = $_POST['phone'];
     $subject = "Form submission";
     $subject2 = "Copy of your form submission";

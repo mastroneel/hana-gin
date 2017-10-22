@@ -95,19 +95,28 @@
       .cocktails .modal-dialog .modal-content .modal-body {
         border: 3px solid #1EB355;
         border-radius: 3px;
-        padding: 10px 20px 30px 30px; }
+        padding: 10px 10px 30px 10px; }
         .cocktails .modal-dialog .modal-content .modal-body h4 {
           font-size: 30px;
           color: #D61F35;
           margin-bottom: 10px;
           font-weight: bold; }
         .cocktails .modal-dialog .modal-content .modal-body .prev-next {
-          margin: 5px;
-          color: #fff;
-          background-color: #1EB355;
-          border: 1px solid #1EB355;
-          border-radius: 3px;
-          padding: 5px 10px; }
+          color: #1EB355;
+          background-color: #fff;
+          border: 1px solid #fff;
+          font-size: 50px;
+          margin-top: 120px;
+          transition: 0.2s; }
+          .cocktails .modal-dialog .modal-content .modal-body .prev-next:hover {
+            color: #D61F35;
+            transition: 0.2s; }
+          .cocktails .modal-dialog .modal-content .modal-body .prev-next:focus {
+            outline: none; }
+        .cocktails .modal-dialog .modal-content .modal-body .prev {
+          float: left; }
+        .cocktails .modal-dialog .modal-content .modal-body .next {
+          float: right; }
         .cocktails .modal-dialog .modal-content .modal-body h5 {
           font-weight: bold;
           margin-top: 15px; }
@@ -203,6 +212,60 @@
     .cocktails .cocktail-pic-9 .image-overlay,
     .cocktails .cocktail-pic-10 .image-overlay {
       padding-top: 35%; } }
+@media (min-width: 1200px) and (min-height: 1050px) {
+  .cocktails .cocktail-row {
+    width: 100%;
+    margin-top: 110px; }
+    .cocktails .cocktail-row .cocktail-pic-1,
+    .cocktails .cocktail-row .cocktail-pic-2,
+    .cocktails .cocktail-row .cocktail-pic-3,
+    .cocktails .cocktail-row .cocktail-pic-4,
+    .cocktails .cocktail-row .cocktail-pic-5,
+    .cocktails .cocktail-row .cocktail-pic-6,
+    .cocktails .cocktail-row .cocktail-pic-7,
+    .cocktails .cocktail-row .cocktail-pic-8,
+    .cocktails .cocktail-row .cocktail-pic-9,
+    .cocktails .cocktail-row .cocktail-pic-10 {
+      height: 250px;
+      width: 250px; } }
+@media (min-width: 1200px) and (min-height: 1200px) {
+  .cocktails .cocktail-row {
+    width: 85%;
+    margin-top: 150px; }
+    .cocktails .cocktail-row .cocktail-pic-1,
+    .cocktails .cocktail-row .cocktail-pic-2,
+    .cocktails .cocktail-row .cocktail-pic-3,
+    .cocktails .cocktail-row .cocktail-pic-4,
+    .cocktails .cocktail-row .cocktail-pic-5,
+    .cocktails .cocktail-row .cocktail-pic-6,
+    .cocktails .cocktail-row .cocktail-pic-7,
+    .cocktails .cocktail-row .cocktail-pic-8,
+    .cocktails .cocktail-row .cocktail-pic-9,
+    .cocktails .cocktail-row .cocktail-pic-10 {
+      height: 250px;
+      width: 250px; } }
+@media (min-width: 1200px) and (min-height: 1300px) {
+  .cocktails .cocktail-row {
+    width: 100%;
+    margin-top: 170px; }
+    .cocktails .cocktail-row .cocktail-pic-1,
+    .cocktails .cocktail-row .cocktail-pic-2,
+    .cocktails .cocktail-row .cocktail-pic-3,
+    .cocktails .cocktail-row .cocktail-pic-4,
+    .cocktails .cocktail-row .cocktail-pic-5,
+    .cocktails .cocktail-row .cocktail-pic-6,
+    .cocktails .cocktail-row .cocktail-pic-7,
+    .cocktails .cocktail-row .cocktail-pic-8,
+    .cocktails .cocktail-row .cocktail-pic-9,
+    .cocktails .cocktail-row .cocktail-pic-10 {
+      height: 350px;
+      width: 350px; } }
+@media (width: 1024px) and (height: 1366px) {
+  .cocktails {
+    min-height: 0; } }
+@media (width: 768px) and (height: 1024px) {
+  .cocktails {
+    min-height: 0; } }
 @media (min-width: 993px) {
   .cocktails #cucumberGinTonicModal .modal-dialog .modal-content .modal-body ul li, .cocktails #cucumberGinTonicModal .modal-dialog .modal-content .modal-body ol li, .cocktails #hanaGinMargaritaModal .modal-dialog .modal-content .modal-body ul li, .cocktails #hanaGinMargaritaModal .modal-dialog .modal-content .modal-body ol li, .cocktails #honeyHanaModal .modal-dialog .modal-content .modal-body ul li, .cocktails #honeyHanaModal .modal-dialog .modal-content .modal-body ol li {
     font-size: 14px; }
@@ -241,8 +304,90 @@
       width: 50%; }
     .cocktails .modal-dialog .modal-content .modal-body ul, .cocktails .modal-dialog .modal-content .modal-body ol {
       font-size: 0.9em; } }
-@media (min-height: 1300px) {
-  .cocktails {
-    min-height: 0; } }
+@media (max-width: 992px) {
+  .cocktails .modal-dialog .modal-content .modal-body .prev-next-lg-screens {
+    display: none; } }
+@media (min-width: 992px) {
+  .cocktails .modal-dialog .modal-content .modal-body .prev-next-sm-screens {
+    display: none; } }
+@media (max-width: 560px) {
+  .cocktails .modal-dialog .modal-content .modal-body .col-xs-1 {
+    padding: 0; }
+  .cocktails .modal-dialog .modal-content .modal-body .prev-next {
+    font-size: 25px; } }
+@media (min-width: 1500px) and (min-height: 1050px) {
+  .cocktails .modal-dialog .modal-content {
+    padding: 25px; }
+    .cocktails .modal-dialog .modal-content .modal-body .logo {
+      width: 250px;
+      max-width: 250px;
+      margin-top: 40px; }
+    .cocktails .modal-dialog .modal-content .modal-body .prev-next {
+      margin-top: 200px; }
+    .cocktails .modal-dialog .modal-content .modal-body h5 {
+      font-size: 20px; }
+    .cocktails .modal-dialog .modal-content .modal-body h4 {
+      font-size: 50px; }
+    .cocktails .modal-dialog .modal-content .modal-body ul li, .cocktails .modal-dialog .modal-content .modal-body ol li {
+      font-size: 20px; }
+  .cocktails #cucumberGinTonicModal .modal-dialog .modal-content .modal-body ul li, .cocktails #cucumberGinTonicModal .modal-dialog .modal-content .modal-body ol li, .cocktails #hanaGinMargaritaModal .modal-dialog .modal-content .modal-body ul li, .cocktails #hanaGinMargaritaModal .modal-dialog .modal-content .modal-body ol li, .cocktails #honeyHanaModal .modal-dialog .modal-content .modal-body ul li, .cocktails #honeyHanaModal .modal-dialog .modal-content .modal-body ol li {
+    font-size: 25px; }
+  .cocktails #cucumberGinTonicModal .modal-dialog .modal-content .modal-body h5, .cocktails #hanaGinMargaritaModal .modal-dialog .modal-content .modal-body h5, .cocktails #honeyHanaModal .modal-dialog .modal-content .modal-body h5 {
+    margin-top: 30px;
+    font-size: 30px; }
+  .cocktails #cucumberGinTonicModal .modal-dialog .modal-content .modal-body h4, .cocktails #hanaGinMargaritaModal .modal-dialog .modal-content .modal-body h4, .cocktails #honeyHanaModal .modal-dialog .modal-content .modal-body h4 {
+    font-size: 50px; }
+  .cocktails #raspberryBloomModal .modal-dialog .modal-content .modal-body ul li, .cocktails #raspberryBloomModal .modal-dialog .modal-content .modal-body ol li, .cocktails #whitePeachModal .modal-dialog .modal-content .modal-body ul li, .cocktails #whitePeachModal .modal-dialog .modal-content .modal-body ol li {
+    font-size: 18px; } }
+@media (min-width: 1500px) and (min-height: 1200px) {
+  .cocktails .modal-dialog .modal-content {
+    padding: 25px; }
+    .cocktails .modal-dialog .modal-content .modal-body .prev-next {
+      margin-top: 250px;
+      font-size: 70px; }
+    .cocktails .modal-dialog .modal-content .modal-body .logo {
+      width: 300px;
+      max-width: 300px;
+      margin-top: 60px; }
+    .cocktails .modal-dialog .modal-content .modal-body h5 {
+      font-size: 28px; }
+    .cocktails .modal-dialog .modal-content .modal-body h4 {
+      font-size: 70px; }
+    .cocktails .modal-dialog .modal-content .modal-body ul li, .cocktails .modal-dialog .modal-content .modal-body ol li {
+      font-size: 28px; }
+  .cocktails #cucumberGinTonicModal .modal-dialog .modal-content .modal-body ul li, .cocktails #cucumberGinTonicModal .modal-dialog .modal-content .modal-body ol li, .cocktails #hanaGinMargaritaModal .modal-dialog .modal-content .modal-body ul li, .cocktails #hanaGinMargaritaModal .modal-dialog .modal-content .modal-body ol li, .cocktails #honeyHanaModal .modal-dialog .modal-content .modal-body ul li, .cocktails #honeyHanaModal .modal-dialog .modal-content .modal-body ol li {
+    font-size: 35px; }
+  .cocktails #cucumberGinTonicModal .modal-dialog .modal-content .modal-body h5, .cocktails #hanaGinMargaritaModal .modal-dialog .modal-content .modal-body h5, .cocktails #honeyHanaModal .modal-dialog .modal-content .modal-body h5 {
+    margin-top: 30px;
+    font-size: 40px; }
+  .cocktails #cucumberGinTonicModal .modal-dialog .modal-content .modal-body h4, .cocktails #hanaGinMargaritaModal .modal-dialog .modal-content .modal-body h4, .cocktails #honeyHanaModal .modal-dialog .modal-content .modal-body h4 {
+    font-size: 70px; }
+  .cocktails #raspberryBloomModal .modal-dialog .modal-content .modal-body ul li, .cocktails #raspberryBloomModal .modal-dialog .modal-content .modal-body ol li, .cocktails #whitePeachModal .modal-dialog .modal-content .modal-body ul li, .cocktails #whitePeachModal .modal-dialog .modal-content .modal-body ol li {
+    font-size: 24px; } }
+@media (min-width: 1500px) and (min-height: 1300px) {
+  .cocktails .modal-dialog .modal-content {
+    padding: 25px; }
+    .cocktails .modal-dialog .modal-content .modal-body .prev-next {
+      font-size: 90px;
+      margin-top: 300px; }
+    .cocktails .modal-dialog .modal-content .modal-body .logo {
+      width: 300px;
+      max-width: 300px;
+      margin-top: 80px; }
+    .cocktails .modal-dialog .modal-content .modal-body h5 {
+      font-size: 40px; }
+    .cocktails .modal-dialog .modal-content .modal-body h4 {
+      font-size: 80px; }
+    .cocktails .modal-dialog .modal-content .modal-body ul li, .cocktails .modal-dialog .modal-content .modal-body ol li {
+      font-size: 35px; }
+  .cocktails #cucumberGinTonicModal .modal-dialog .modal-content .modal-body ul li, .cocktails #cucumberGinTonicModal .modal-dialog .modal-content .modal-body ol li, .cocktails #hanaGinMargaritaModal .modal-dialog .modal-content .modal-body ul li, .cocktails #hanaGinMargaritaModal .modal-dialog .modal-content .modal-body ol li, .cocktails #honeyHanaModal .modal-dialog .modal-content .modal-body ul li, .cocktails #honeyHanaModal .modal-dialog .modal-content .modal-body ol li {
+    font-size: 45px; }
+  .cocktails #cucumberGinTonicModal .modal-dialog .modal-content .modal-body h5, .cocktails #hanaGinMargaritaModal .modal-dialog .modal-content .modal-body h5, .cocktails #honeyHanaModal .modal-dialog .modal-content .modal-body h5 {
+    margin-top: 30px;
+    font-size: 40px; }
+  .cocktails #cucumberGinTonicModal .modal-dialog .modal-content .modal-body h4, .cocktails #hanaGinMargaritaModal .modal-dialog .modal-content .modal-body h4, .cocktails #honeyHanaModal .modal-dialog .modal-content .modal-body h4 {
+    font-size: 80px; }
+  .cocktails #raspberryBloomModal .modal-dialog .modal-content .modal-body ul li, .cocktails #raspberryBloomModal .modal-dialog .modal-content .modal-body ol li, .cocktails #whitePeachModal .modal-dialog .modal-content .modal-body ul li, .cocktails #whitePeachModal .modal-dialog .modal-content .modal-body ol li {
+    font-size: 30px; } }
 
 /*# sourceMappingURL=cocktails.css.map */
