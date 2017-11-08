@@ -18,11 +18,30 @@
     width: 10em;
   }
   .awards-row {
-    margin-top: 100px;
+    margin-top: 60px;
     img {
-      margin-top: 60px;
+      margin-top: 30px;
       width: 260px;
     }
+    .points {
+      width: 220px;
+    }
+    .alcohol-afficionado {
+      width: 240px;
+    }
+    .review-of-spirits {
+      width: 230px;
+      height: 240px;
+    }
+  }
+  .awards-row-2 {
+    padding: 0 180px;
+    .image-container {
+      margin-top: -100px;
+    }
+  }
+  .button-container {
+    margin-top: -60px;
   }
 }
 
@@ -53,6 +72,9 @@
 @media (max-width: 992px) {
   .awards {
     background-attachment: scroll;
+    .awards-row-2 {
+      padding: 0 130px;
+    }
   }
 }
 
@@ -88,6 +110,12 @@
         width: 270px;
         margin-top: 40px;
       }
+    }
+    .awards-row-2 {
+      padding: 0;
+    }
+    .button-container {
+      margin-top: -10px;
     }
   }
 }
@@ -154,5 +182,48 @@
 @media (width: 768px) and (height: 1024px) {
   .awards {
     min-height: 0;
+  }
+}
+
+@media (min-width: 1600px) and (min-height: 1050px) {
+  .awards {
+    .awards-row {
+      img {
+        width: 300px;
+      }
+      .points {
+        width: 260px;
+      }
+      .alcohol-afficionado {
+        width: 280px;
+      }
+      .review-of-spirits {
+        width: 270px;
+        height: 280px;
+      }
+    }
+    .awards-row-2 {
+      padding: 0 400px;
+    }
+  }
+}
+
+@media (min-width: 2600px) and (min-height: 1400px) {
+  .awards {
+    .awards-row {
+      img {
+        width: 350px;
+      }
+      .points {
+        width: 310px;
+      }
+      .alcohol-afficionado {
+        width: 320px;
+      }
+      .review-of-spirits {
+        width: 320px;
+        height: 330px;
+      }
+    }
   }
 }

@@ -31,6 +31,10 @@
        margin-left: -25px;
        margin-bottom: -33px;
     }
+    li.no-stores::before {
+      content: '';
+      background-color: transparent;
+    }
   }
 }
 

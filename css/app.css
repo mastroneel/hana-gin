@@ -8960,14 +8960,29 @@ hr {
   .awards hr {
     width: 10em; }
   .awards .awards-row {
-    margin-top: 100px; }
+    margin-top: 60px; }
     .awards .awards-row img {
-      margin-top: 60px;
+      margin-top: 30px;
       width: 260px; }
+    .awards .awards-row .points {
+      width: 220px; }
+    .awards .awards-row .alcohol-afficionado {
+      width: 240px; }
+    .awards .awards-row .review-of-spirits {
+      width: 230px;
+      height: 240px; }
+  .awards .awards-row-2 {
+    padding: 0 180px; }
+    .awards .awards-row-2 .image-container {
+      margin-top: -100px; }
+  .awards .button-container {
+    margin-top: -60px; }
 
 @media (max-width: 992px) {
   .awards {
-    background-attachment: scroll; } }
+    background-attachment: scroll; }
+    .awards .awards-row-2 {
+      padding: 0 130px; } }
 @media (max-width: 922px) {
   .awards .awards-row img {
     width: 230px; } }
@@ -8982,7 +8997,11 @@ hr {
     margin-bottom: 80px; }
     .awards .awards-row img {
       width: 270px;
-      margin-top: 40px; } }
+      margin-top: 40px; }
+  .awards .awards-row-2 {
+    padding: 0; }
+  .awards .button-container {
+    margin-top: -10px; } }
 @media (max-width: 440px) {
   .awards .button {
     width: 300px;
@@ -9012,6 +9031,28 @@ hr {
 @media (width: 768px) and (height: 1024px) {
   .awards {
     min-height: 0; } }
+@media (min-width: 1600px) and (min-height: 1050px) {
+  .awards .awards-row img {
+    width: 300px; }
+  .awards .awards-row .points {
+    width: 260px; }
+  .awards .awards-row .alcohol-afficionado {
+    width: 280px; }
+  .awards .awards-row .review-of-spirits {
+    width: 270px;
+    height: 280px; }
+  .awards .awards-row-2 {
+    padding: 0 400px; } }
+@media (min-width: 2600px) and (min-height: 1400px) {
+  .awards .awards-row img {
+    width: 350px; }
+  .awards .awards-row .points {
+    width: 310px; }
+  .awards .awards-row .alcohol-afficionado {
+    width: 320px; }
+  .awards .awards-row .review-of-spirits {
+    width: 320px;
+    height: 330px; } }
 .cocktails {
   min-height: 100vh;
   padding-bottom: 80px;
@@ -9460,6 +9501,9 @@ hr {
       background-color: #D61F35;
       margin-left: -25px;
       margin-bottom: -33px; }
+    #panel ul li.no-stores::before {
+      content: '';
+      background-color: transparent; }
 
 .storelocator-panel {
   overflow: auto; }
