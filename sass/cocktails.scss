@@ -17,7 +17,9 @@
   .cocktail-pic-7,
   .cocktail-pic-8,
   .cocktail-pic-9,
-  .cocktail-pic-10 {
+  .cocktail-pic-10,
+  .cocktail-pic-11,
+  .cocktail-pic-12 {
     height: 150px;
     width: 150px;
     background-size: cover;
@@ -74,8 +76,20 @@
   .cocktail-pic-8 {
     background-image: url('../img/white-peach-refresher.jpg');
   }
+  .cocktail-pic-9 {
+    background-image: url('../img/kennygt.jpg');
+  }
+  .cocktail-pic-10 {
+    background-image: url('../img/negroni.jpg');
+  }
+  .cocktail-pic-11 {
+    background-image: url('../img/ginger-gin-gimlet.jpg');
+  }
+  .cocktail-pic-12 {
+    background-image: url('../img/magnolia-lane-martini.jpg');
+  }
   .cocktail-row {
-    width: 75%;
+    width: 80%;
     margin: 20px auto 70px auto;
   }
   // Modal
@@ -155,7 +169,7 @@
 @media (max-width: 1247px) {
   .cocktails {
     .cocktail-row {
-      width: 85%;
+      width: 100%;
     }
   }
 }
@@ -174,9 +188,11 @@
     .cocktail-pic-7,
     .cocktail-pic-8,
     .cocktail-pic-9,
-    .cocktail-pic-10 {
-      width: 120px;
-      height: 120px;
+    .cocktail-pic-10,
+    .cocktail-pic-11,
+    .cocktail-pic-12  {
+      width: 110px;
+      height: 110px;
       .image-overlay {
         padding-top: 35%;
       }
@@ -198,7 +214,9 @@
     .cocktail-pic-7,
     .cocktail-pic-8,
     .cocktail-pic-9,
-    .cocktail-pic-10 {
+    .cocktail-pic-10,
+    .cocktail-pic-11,
+    .cocktail-pic-12  {
       width: 180px;
       height: 180px;
       .image-overlay {
@@ -223,7 +241,9 @@
     .cocktail-pic-7,
     .cocktail-pic-8,
     .cocktail-pic-9,
-    .cocktail-pic-10 {
+    .cocktail-pic-10,
+    .cocktail-pic-11,
+    .cocktail-pic-12 {
       width: 130px;
       height: 130px;
       .image-overlay {
@@ -252,7 +272,9 @@
       .cocktail-pic-7,
       .cocktail-pic-8,
       .cocktail-pic-9,
-      .cocktail-pic-10 {
+      .cocktail-pic-10,
+      .cocktail-pic-11,
+      .cocktail-pic-12  {
         height: 250px;
         width: 250px;
       }
@@ -274,7 +296,9 @@
       .cocktail-pic-7,
       .cocktail-pic-8,
       .cocktail-pic-9,
-      .cocktail-pic-10 {
+      .cocktail-pic-10,
+      .cocktail-pic-11,
+      .cocktail-pic-12  {
         height: 250px;
         width: 250px;
       }
@@ -296,7 +320,9 @@
       .cocktail-pic-7,
       .cocktail-pic-8,
       .cocktail-pic-9,
-      .cocktail-pic-10 {
+      .cocktail-pic-10,
+      .cocktail-pic-11,
+      .cocktail-pic-12  {
         height: 350px;
         width: 350px;
       }

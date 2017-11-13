@@ -14,7 +14,9 @@
   .cocktails .cocktail-pic-7,
   .cocktails .cocktail-pic-8,
   .cocktails .cocktail-pic-9,
-  .cocktails .cocktail-pic-10 {
+  .cocktails .cocktail-pic-10,
+  .cocktails .cocktail-pic-11,
+  .cocktails .cocktail-pic-12 {
     height: 150px;
     width: 150px;
     background-size: cover;
@@ -29,7 +31,9 @@
     .cocktails .cocktail-pic-7 .image-overlay,
     .cocktails .cocktail-pic-8 .image-overlay,
     .cocktails .cocktail-pic-9 .image-overlay,
-    .cocktails .cocktail-pic-10 .image-overlay {
+    .cocktails .cocktail-pic-10 .image-overlay,
+    .cocktails .cocktail-pic-11 .image-overlay,
+    .cocktails .cocktail-pic-12 .image-overlay {
       opacity: 0;
       background-color: rgba(30, 179, 85, 0.8);
       color: #fff;
@@ -46,7 +50,9 @@
       .cocktails .cocktail-pic-7 .image-overlay h6,
       .cocktails .cocktail-pic-8 .image-overlay h6,
       .cocktails .cocktail-pic-9 .image-overlay h6,
-      .cocktails .cocktail-pic-10 .image-overlay h6 {
+      .cocktails .cocktail-pic-10 .image-overlay h6,
+      .cocktails .cocktail-pic-11 .image-overlay h6,
+      .cocktails .cocktail-pic-12 .image-overlay h6 {
         font-size: 1.2em; }
     .cocktails .cocktail-pic-1:hover .image-overlay,
     .cocktails .cocktail-pic-2:hover .image-overlay,
@@ -57,7 +63,9 @@
     .cocktails .cocktail-pic-7:hover .image-overlay,
     .cocktails .cocktail-pic-8:hover .image-overlay,
     .cocktails .cocktail-pic-9:hover .image-overlay,
-    .cocktails .cocktail-pic-10:hover .image-overlay {
+    .cocktails .cocktail-pic-10:hover .image-overlay,
+    .cocktails .cocktail-pic-11:hover .image-overlay,
+    .cocktails .cocktail-pic-12:hover .image-overlay {
       opacity: 1;
       transition: 0.5s; }
   .cocktails .cocktail-pic-3,
@@ -83,8 +91,16 @@
     background-image: url("../img/raspberry-bloom.jpg"); }
   .cocktails .cocktail-pic-8 {
     background-image: url("../img/white-peach-refresher.jpg"); }
+  .cocktails .cocktail-pic-9 {
+    background-image: url("../img/kennygt.jpg"); }
+  .cocktails .cocktail-pic-10 {
+    background-image: url("../img/negroni.jpg"); }
+  .cocktails .cocktail-pic-11 {
+    background-image: url("../img/ginger-gin-gimlet.jpg"); }
+  .cocktails .cocktail-pic-12 {
+    background-image: url("../img/magnolia-lane-martini.jpg"); }
   .cocktails .cocktail-row {
-    width: 75%;
+    width: 80%;
     margin: 20px auto 70px auto; }
   .cocktails .modal-dialog {
     width: 65%;
@@ -135,7 +151,7 @@
 
 @media (max-width: 1247px) {
   .cocktails .cocktail-row {
-    width: 85%; } }
+    width: 100%; } }
 @media (max-width: 1080px) {
   .cocktails .cocktail-row {
     width: 100%; }
@@ -148,9 +164,11 @@
   .cocktails .cocktail-pic-7,
   .cocktails .cocktail-pic-8,
   .cocktails .cocktail-pic-9,
-  .cocktails .cocktail-pic-10 {
-    width: 120px;
-    height: 120px; }
+  .cocktails .cocktail-pic-10,
+  .cocktails .cocktail-pic-11,
+  .cocktails .cocktail-pic-12 {
+    width: 110px;
+    height: 110px; }
     .cocktails .cocktail-pic-1 .image-overlay,
     .cocktails .cocktail-pic-2 .image-overlay,
     .cocktails .cocktail-pic-3 .image-overlay,
@@ -160,7 +178,9 @@
     .cocktails .cocktail-pic-7 .image-overlay,
     .cocktails .cocktail-pic-8 .image-overlay,
     .cocktails .cocktail-pic-9 .image-overlay,
-    .cocktails .cocktail-pic-10 .image-overlay {
+    .cocktails .cocktail-pic-10 .image-overlay,
+    .cocktails .cocktail-pic-11 .image-overlay,
+    .cocktails .cocktail-pic-12 .image-overlay {
       padding-top: 35%; } }
 @media (max-width: 767px) {
   .cocktails .cocktail-row {
@@ -174,7 +194,9 @@
   .cocktails .cocktail-pic-7,
   .cocktails .cocktail-pic-8,
   .cocktails .cocktail-pic-9,
-  .cocktails .cocktail-pic-10 {
+  .cocktails .cocktail-pic-10,
+  .cocktails .cocktail-pic-11,
+  .cocktails .cocktail-pic-12 {
     width: 180px;
     height: 180px; }
     .cocktails .cocktail-pic-1 .image-overlay,
@@ -186,7 +208,9 @@
     .cocktails .cocktail-pic-7 .image-overlay,
     .cocktails .cocktail-pic-8 .image-overlay,
     .cocktails .cocktail-pic-9 .image-overlay,
-    .cocktails .cocktail-pic-10 .image-overlay {
+    .cocktails .cocktail-pic-10 .image-overlay,
+    .cocktails .cocktail-pic-11 .image-overlay,
+    .cocktails .cocktail-pic-12 .image-overlay {
       padding-top: 35%; } }
 @media (max-width: 435px) {
   .cocktails .cocktail-pic-1,
@@ -198,7 +222,9 @@
   .cocktails .cocktail-pic-7,
   .cocktails .cocktail-pic-8,
   .cocktails .cocktail-pic-9,
-  .cocktails .cocktail-pic-10 {
+  .cocktails .cocktail-pic-10,
+  .cocktails .cocktail-pic-11,
+  .cocktails .cocktail-pic-12 {
     width: 130px;
     height: 130px; }
     .cocktails .cocktail-pic-1 .image-overlay,
@@ -210,7 +236,9 @@
     .cocktails .cocktail-pic-7 .image-overlay,
     .cocktails .cocktail-pic-8 .image-overlay,
     .cocktails .cocktail-pic-9 .image-overlay,
-    .cocktails .cocktail-pic-10 .image-overlay {
+    .cocktails .cocktail-pic-10 .image-overlay,
+    .cocktails .cocktail-pic-11 .image-overlay,
+    .cocktails .cocktail-pic-12 .image-overlay {
       padding-top: 35%; } }
 @media (min-width: 1200px) and (min-height: 1050px) {
   .cocktails .cocktail-row {
@@ -225,7 +253,9 @@
     .cocktails .cocktail-row .cocktail-pic-7,
     .cocktails .cocktail-row .cocktail-pic-8,
     .cocktails .cocktail-row .cocktail-pic-9,
-    .cocktails .cocktail-row .cocktail-pic-10 {
+    .cocktails .cocktail-row .cocktail-pic-10,
+    .cocktails .cocktail-row .cocktail-pic-11,
+    .cocktails .cocktail-row .cocktail-pic-12 {
       height: 250px;
       width: 250px; } }
 @media (min-width: 1200px) and (min-height: 1200px) {
@@ -241,7 +271,9 @@
     .cocktails .cocktail-row .cocktail-pic-7,
     .cocktails .cocktail-row .cocktail-pic-8,
     .cocktails .cocktail-row .cocktail-pic-9,
-    .cocktails .cocktail-row .cocktail-pic-10 {
+    .cocktails .cocktail-row .cocktail-pic-10,
+    .cocktails .cocktail-row .cocktail-pic-11,
+    .cocktails .cocktail-row .cocktail-pic-12 {
       height: 250px;
       width: 250px; } }
 @media (min-width: 1200px) and (min-height: 1300px) {
@@ -257,7 +289,9 @@
     .cocktails .cocktail-row .cocktail-pic-7,
     .cocktails .cocktail-row .cocktail-pic-8,
     .cocktails .cocktail-row .cocktail-pic-9,
-    .cocktails .cocktail-row .cocktail-pic-10 {
+    .cocktails .cocktail-row .cocktail-pic-10,
+    .cocktails .cocktail-row .cocktail-pic-11,
+    .cocktails .cocktail-row .cocktail-pic-12 {
       height: 350px;
       width: 350px; } }
 @media (width: 1024px) and (height: 1366px) {
