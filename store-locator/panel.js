@@ -69,26 +69,11 @@ google.maps.event.addDomListener(window, 'load', function() {
 
       } else {
 
-        var map;
-
-        var mapOptions = {
-            center: new google.maps.LatLng(37.7749, -122.4194),
-            zoom: 12,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-
-        map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-
-
+        var map = new google.maps.Map(document.getElementById('map-canvas'), {
+          center: new google.maps.LatLng(37.7749, -122.4194),
+          zoom: 12,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
         });
-
-
-
-        // var map = new google.maps.Map(document.getElementById('map-canvas'), {
-        //   center: new google.maps.LatLng(37.7749, -122.4194),
-        //   zoom: 12,
-        //   mapTypeId: google.maps.MapTypeId.ROADMAP
-        // });
       }
 
       var panelDiv = document.getElementById('panel');
