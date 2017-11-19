@@ -1,3 +1,5 @@
+@import 'variables';
+
 #map-canvas, #panel {
   height: 500px;
 }
@@ -128,6 +130,10 @@ input.directions-to {
   margin-right: 0.5em;
 }
 
+.show-more {
+  display: none;
+}
+
 
 // *************
 // Media queries
@@ -154,8 +160,38 @@ input.directions-to {
     width: 60%;
     height: 400px;
   }
+  .show-more {
+    display: block;
+    margin: 30px auto 0 auto;
+    font-size: 14px;
+    padding: 10px 0;
+    text-transform: uppercase;
+    border: 2px solid $red;
+    width: 170px;
+  }
+  #panel.tall {
+    height: 1500px;
+  }
   #panel {
     margin-top: 40px;
+    li.store:nth-of-type(4),
+    li.store:nth-of-type(5),
+    li.store:nth-of-type(6),
+    li.store:nth-of-type(7),
+    li.store:nth-of-type(8),
+    li.store:nth-of-type(9),
+    li.store:nth-of-type(10) {
+       display: none;
+    }
+    li.store:nth-of-type(4).visible,
+    li.store:nth-of-type(5).visible,
+    li.store:nth-of-type(6).visible,
+    li.store:nth-of-type(7).visible,
+    li.store:nth-of-type(8).visible,
+    li.store:nth-of-type(9).visible,
+    li.store:nth-of-type(10).visible {
+      display: block;
+    }
   }
 }
 

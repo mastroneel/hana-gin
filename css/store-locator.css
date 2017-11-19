@@ -1,87 +1,191 @@
-/*
-Error: Undefined variable: "$white".
-        on line 17 of /Users/laurenmastroni/Code/Sites/hana-gin/sass/store-locator.scss
+#map-canvas, #panel {
+  height: 500px; }
 
-12:   margin: 0 auto;
-13:   text-align: left;
-14:   ul {
-15:     list-style: none;
-16:     li {
-17:       color: $white;
-18:       font-size: 18px;
-19:       text-align: left;
-20:       margin-top: 30px;
-21:     }
-22:     li::before{
+#map-canvas {
+  width: 90%;
+  margin-left: 70px; }
 
-Backtrace:
-/Users/laurenmastroni/Code/Sites/hana-gin/sass/store-locator.scss:17
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:391:in `run'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/bin/sass:13:in `<top (required)>'
-/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:18:in `load'
-/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:18:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 17 of /Users/laurenmastroni/Code/Sites/hana-gin/sass/store-locator.scss\A \A 12:   margin: 0 auto;\A 13:   text-align: left;\A 14:   ul {\A 15:     list-style: none;\A 16:     li {\A 17:       color: $white;\A 18:       font-size: 18px;\A 19:       text-align: left;\A 20:       margin-top: 30px;\A 21:     }\A 22:     li::before{"; }
+#panel {
+  width: 500px;
+  margin: 0 auto;
+  text-align: left; }
+  #panel ul {
+    list-style: none; }
+    #panel ul li {
+      color: #fff;
+      font-size: 18px;
+      text-align: left;
+      margin-top: 30px; }
+    #panel ul li::before {
+      content: '';
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      -moz-border-radius: 7.5px;
+      -webkit-border-radius: 7.5px;
+      border-radius: 7.5px;
+      background-color: #D61F35;
+      margin-left: -25px;
+      margin-bottom: -33px; }
+    #panel ul li.no-stores::before {
+      content: '';
+      background-color: transparent; }
+
+.storelocator-panel {
+  overflow: auto; }
+
+.storelocator-panel .location-search input {
+  width: 350px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #D61F35;
+  border-radius: 3px;
+  color: #D61F35;
+  padding-left: 8px; }
+  .storelocator-panel .location-search input:focus {
+    outline: none; }
+  .storelocator-panel .location-search input::-webkit-input-placeholder {
+    visibility: hidden;
+    color: #D61F35 !important; }
+  .storelocator-panel .location-search input:-moz-placeholder {
+    /* Firefox 18- */
+    color: #D61F35 !important; }
+  .storelocator-panel .location-search input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #D61F35 !important; }
+  .storelocator-panel .location-search input:-ms-input-placeholder {
+    color: #D61F35 !important; }
+
+input.directions-to {
+  border: 2px solid #D61F35;
+  border-radius: 3px;
+  background: none;
+  margin-top: 15px;
+  height: 30px;
+  color: #D61F35;
+  padding-left: 8px;
+  width: 175px; }
+
+.directions-panel form input[type="submit"] {
+  margin-top: 15px;
+  background-color: #1EB355;
+  border: 1px solid #1EB355;
+  color: #fff;
+  border-radius: 3px;
+  padding: 5px 15px;
+  margin-right: 5px; }
+.directions-panel form .close-directions {
+  margin-top: 15px;
+  background-color: #1EB355;
+  border: 1px solid #1EB355;
+  height: 30px;
+  color: white;
+  border-radius: 3px;
+  padding: 7px 10px;
+  margin-left: 5px; }
+
+.adp, .adp table {
+  background-color: #fff;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 3px; }
+
+.storelocator-panel .store-list .no-stores {
+  color: grey; }
+
+.store .title {
+  padding-top: 5px; }
+
+.store .action {
+  font-size: 0.8em;
+  margin-right: 0.5em; }
+
+.show-more {
+  display: none; }
+
+@media (max-width: 1032px) {
+  #panel {
+    width: 300px; }
+
+  .storelocator-panel .location-search input {
+    width: 280px; } }
+@media (max-width: 987px) {
+  #map-canvas {
+    margin: 0 auto; } }
+@media (max-width: 767px) {
+  #map-canvas {
+    width: 60%;
+    height: 400px; }
+
+  .show-more {
+    display: block;
+    margin: 30px auto 0 auto;
+    font-size: 14px;
+    padding: 10px 0;
+    text-transform: uppercase;
+    border: 2px solid #D61F35;
+    width: 170px; }
+
+  #panel.tall {
+    height: 1500px; }
+
+  #panel {
+    margin-top: 40px; }
+    #panel li.store:nth-of-type(4),
+    #panel li.store:nth-of-type(5),
+    #panel li.store:nth-of-type(6),
+    #panel li.store:nth-of-type(7),
+    #panel li.store:nth-of-type(8),
+    #panel li.store:nth-of-type(9),
+    #panel li.store:nth-of-type(10) {
+      display: none; }
+    #panel li.store:nth-of-type(4).visible,
+    #panel li.store:nth-of-type(5).visible,
+    #panel li.store:nth-of-type(6).visible,
+    #panel li.store:nth-of-type(7).visible,
+    #panel li.store:nth-of-type(8).visible,
+    #panel li.store:nth-of-type(9).visible,
+    #panel li.store:nth-of-type(10).visible {
+      display: block; } }
+@media (max-width: 660px) {
+  #map-canvas {
+    width: 80%; } }
+@media (max-width: 540px) {
+  #map-canvas {
+    width: 90%; } }
+@media (max-width: 429px) {
+  #map-canvas {
+    width: 95%;
+    height: 300px; } }
+@media (max-width: 375px) {
+  #map-canvas {
+    width: 98%;
+    height: 290px; } }
+@media (max-width: 330px) {
+  .store .action {
+    font-size: 0.7em;
+    margin-right: 0.5em; } }
+@media (min-width: 1200px) and (min-height: 1050px) {
+  #map-canvas {
+    width: 90%;
+    height: 700px; }
+
+  #panel {
+    width: 600px;
+    height: 700px; } }
+@media (min-width: 1200px) and (min-height: 1200px) {
+  #map-canvas {
+    width: 90%;
+    height: 800px; }
+
+  #panel {
+    width: 700px;
+    height: 800px; } }
+@media (min-height: 1300px) {
+  #map-canvas {
+    margin-top: 150px; }
+
+  #panel {
+    margin-top: 150px; } }
+
+/*# sourceMappingURL=store-locator.css.map */

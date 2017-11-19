@@ -42,23 +42,41 @@
     float: left;
     margin-left: 50px; }
 
+@media (min-width: 2500px) {
+  .contact form p {
+    font-size: 30px; }
+  .contact form input {
+    height: 50px; }
+  .contact .button-container .button {
+    font-size: 30px; }
+  .contact .address h3, .contact .address p {
+    font-size: 35px; } }
 @media (max-width: 1069px) {
   .contact {
-    padding: 0; }
+    padding: 0 20px 80px 20px; }
     .contact form {
       width: 90%; } }
 @media (max-width: 922px) {
+  .contact .address h3, .contact .address p {
+    font-size: 20px; }
   .contact form {
-    width: 90%; } }
+    width: 90%;
+    margin: 0 auto;
+    float: none; } }
 @media (max-width: 767px) {
-  .contact .address {
-    width: 100%; }
-    .contact .address h3, .contact .address p {
-      margin-left: 0;
-      text-align: center; }
-  .contact .office-map {
-    float: none;
-    margin: 0 auto; } }
+  .contact {
+    padding: 0; }
+    .contact .address {
+      width: 100%;
+      margin-top: 50px; }
+      .contact .address h3, .contact .address p {
+        margin-left: 0;
+        text-align: center; }
+      .contact .address h3 {
+        font-size: 25px; }
+    .contact .office-map {
+      float: none;
+      margin: 0 auto; } }
 @media (max-width: 350px) {
   .contact .office-map {
     width: 290px; } }

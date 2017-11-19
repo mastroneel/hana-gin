@@ -65,9 +65,32 @@
 // Media queries
 // *************
 
+@media (min-width: 2500px) {
+  .contact {
+    form {
+      p {
+        font-size: 30px;
+      }
+      input {
+        height: 50px;
+      }
+    }
+    .button-container {
+      .button {
+        font-size: 30px;
+      }
+    }
+    .address {
+      h3, p {
+        font-size: 35px;
+      }
+    }
+  }
+}
+
 @media (max-width: 1069px) {
   .contact {
-    padding: 0;
+    padding: 0 20px 80px 20px;
     form {
       width: 90%;
     }
@@ -76,19 +99,31 @@
 
 @media (max-width: 922px) {
   .contact {
+    .address {
+      h3, p {
+        font-size: 20px;
+      }
+    }
     form {
       width: 90%;
+      margin: 0 auto;
+      float: none;
     }
   }
 }
 
 @media (max-width: 767px) {
   .contact {
+    padding: 0;
     .address {
       width: 100%;
+      margin-top: 50px;
       h3, p {
         margin-left: 0;
         text-align: center;
+      }
+      h3 {
+        font-size: 25px;
       }
     }
     .office-map {
@@ -129,3 +164,95 @@
     min-height: 0;
   }
 }
+
+
+// // *************
+// // Media queries
+// // *************
+//
+// @media (max-width: 1069px) {
+//   .contact {
+//     padding: 0;
+//     form {
+//       width: 90%;
+//     }
+//   }
+// }
+//
+// @media (max-width: 922px) {
+//   .contact {
+//     form {
+//       width: 90%;
+//     }
+//   }
+// }
+//
+// // @media (max-width: 767px) {
+// //   .contact {
+// //     .address {
+// //       width: 100%;
+// //       h3, p {
+// //         margin-left: 0;
+// //         text-align: center;
+// //       }
+// //     }
+// //     .office-map {
+// //       float: none;
+// //       margin: 0 auto;
+// //     }
+// //   }
+// // }
+//
+// @media (max-width: 767px) {
+//   .contact {
+//     padding: 0;
+//     .address {
+//       width: 100%;
+//       margin-top: 50px;
+//       h3, p {
+//         margin-left: 0;
+//         text-align: center;
+//       }
+//       h3 {
+//         font-size: 25px;
+//       }
+//     }
+//     .office-map {
+//       float: none;
+//       margin: 0 auto;
+//     }
+//   }
+// }
+//
+//
+// @media (max-width: 350px) {
+//   .contact {
+//     .office-map {
+//       width: 290px;
+//     }
+//   }
+// }
+//
+//
+// // **************
+// // Height
+// // Media queries
+// // **************
+//
+// @media (min-width: 1200px) and (min-height: 1050px) {
+//   .contact {
+//     min-height: 0;
+//   }
+// }
+//
+// @media (width: 1024px) and (height: 1366px) {
+//   .contact {
+//     min-height: 0;
+//   }
+// }
+//
+// @media (width: 768px) and (height: 1024px) {
+//   .contact {
+//     min-height: 0;
+//   }
+// }

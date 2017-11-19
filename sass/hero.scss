@@ -1,7 +1,8 @@
 .hero {
-  min-height: 85vh;
+  min-height: 100vh;
   text-align: left;
   padding: 8%;
+  padding-top: 200px;
   background-image: url('../img/hero-image-large.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -143,7 +144,7 @@
 
 @media (max-width: 1099px) {
   .hero {
-    padding-top: 150px;
+    padding-top: 190px;
     background-image: url('../img/hero-image-medium.png');
     h1 {
       font-size: 4em;
@@ -163,16 +164,15 @@
 @media (max-width: 812px) {
   .hero {
     background-image: url('../img/hero-image-small.png');
-    background-size: 100vh;
+    // background-size: 100vh;
     background-position: bottom right;
   }
 }
 
 @media (max-width: 650px) {
   .hero {
-    // background-image: url('../img/hero-image-mobile.jpg');
-    padding-top: 168px;
-    background-size: 90vh;
+    padding-top: 268px;
+    // background-size: 90vh;
     background-position: bottom right;
     h1 {
       font-size: 2.7em;
@@ -182,7 +182,7 @@
 
 @media (max-width: 450px) {
   .hero {
-    padding-top: 108px;
+    padding-top: 230px;
     h1 {
       font-size: 2.4em;
     }
@@ -191,7 +191,7 @@
 
 @media (max-width: 375px) {
   .hero {
-    padding-top: 90px;
+    padding-top: 210px;
     h1 {
       font-size: 2.4em;
     }
@@ -200,8 +200,8 @@
 
 @media (max-width: 330px) {
   .hero {
-    padding-top: 90px;
-    background-size: 80vh;
+    padding-top: 180px;
+    // background-size: 80vh;
     background-position: bottom right;
     h1 {
       font-size: 2.3em;

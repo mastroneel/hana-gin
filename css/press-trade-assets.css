@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$red".
-        on line 6 of /Users/laurenmastroni/Code/Sites/hana-gin/sass/press-trade-assets.scss
+        on line 7 of /Users/laurenmastroni/Code/Sites/hana-gin/sass/press-trade-assets.scss
 
-1: .downloads {
 2:   min-height: 90vh;
-3:   h1 {
-4:     margin-left: 60px;
-5:     margin-top: 30px;
-6:     color: $red;
-7:   }
-8:   ul {
-9:     list-style: none;
-10:     margin-left: 60px;
-11:     font-size: 1.5em;
+3:   padding-top: 100px;
+4:   h1 {
+5:     margin-left: 60px;
+6:     margin-top: 30px;
+7:     color: $red;
+8:   }
+9:   ul {
+10:     list-style: none;
+11:     margin-left: 60px;
+12:     font-size: 1.5em;
 
 Backtrace:
-/Users/laurenmastroni/Code/Sites/hana-gin/sass/press-trade-assets.scss:6
+/Users/laurenmastroni/Code/Sites/hana-gin/sass/press-trade-assets.scss:7
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -73,4 +73,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$red\".\A         on line 6 of /Users/laurenmastroni/Code/Sites/hana-gin/sass/press-trade-assets.scss\A \A 1: .downloads {\A 2:   min-height: 90vh;\A 3:   h1 {\A 4:     margin-left: 60px;\A 5:     margin-top: 30px;\A 6:     color: $red;\A 7:   }\A 8:   ul {\A 9:     list-style: none;\A 10:     margin-left: 60px;\A 11:     font-size: 1.5em;"; }
+  content: "Error: Undefined variable: \"$red\".\A         on line 7 of /Users/laurenmastroni/Code/Sites/hana-gin/sass/press-trade-assets.scss\A \A 2:   min-height: 90vh;\A 3:   padding-top: 100px;\A 4:   h1 {\A 5:     margin-left: 60px;\A 6:     margin-top: 30px;\A 7:     color: $red;\A 8:   }\A 9:   ul {\A 10:     list-style: none;\A 11:     margin-left: 60px;\A 12:     font-size: 1.5em;"; }

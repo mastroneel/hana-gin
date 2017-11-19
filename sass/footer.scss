@@ -9,5 +9,8 @@ footer {
   p {
     font-size: 0.8em;
     line-height: 0.7;
+    a, a:hover {
+      text-decoration: underline;
+    }
   }
 }
