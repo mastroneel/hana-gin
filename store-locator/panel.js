@@ -56,7 +56,7 @@ google.maps.event.addDomListener(window, 'load', function() {
 
 
 
-
+// Works, but doesn't default to San Francisco
   (function() {
 
       if(!!navigator.geolocation) {
@@ -85,7 +85,6 @@ google.maps.event.addDomListener(window, 'load', function() {
 
 
       } else {
-        alert('Geolocation not supported');
         var map = new google.maps.Map(document.getElementById('map-canvas'), {
           center: new google.maps.LatLng(37.7749, -122.4194),
           zoom: 12,
