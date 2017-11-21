@@ -40,6 +40,10 @@ google.maps.event.addDomListener(window, 'load', function() {
 
 
   (function() {
+    function error(err) {
+      console.log('ERROR('+err.code+'): '+err.message);
+      if (map && map.setCenter) map.setCenter(new google.maps.LatLng(37.7749, -122.4194))
+    };
 
       if(!!navigator.geolocation) {
 
@@ -63,16 +67,22 @@ google.maps.event.addDomListener(window, 'load', function() {
 
               map.setCenter(geolocate);
 
-          });
+          }, error);
 
-      } else {
-
-        var map = new google.maps.Map(document.getElementById('map-canvas'), {
-          center: new google.maps.LatLng(37.7749, -122.4194),
-          zoom: 12,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        });
       }
+
+      // else {
+
+
+
+        // var map = new google.maps.Map(document.getElementById('map-canvas'), {
+        //   center: new google.maps.LatLng(37.7749, -122.4194),
+        //   zoom: 12,
+        //   mapTypeId: google.maps.MapTypeId.ROADMAP
+        // });
+      // }
+
+
 
       var panelDiv = document.getElementById('panel');
 
