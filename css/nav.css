@@ -1,54 +1,163 @@
-/*
-Error: Undefined variable: "$white".
-        on line 7 of /Users/laurenmastroni/Code/Sites/hana-gin/sass/nav.scss
+/* =Variables + Placeholder
+----------------------------------------------------- */
+.site-menu, .toggle-overlay-label {
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out; }
 
-2: /* =Variables + Placeholder
-3: ----------------------------------------------------- *\/
-4: $toggle-stripe-2: 10px;
-5: $toggle-stripe-3: 20px;
-6: 
-7: $navbar-background: $white;
-8: $navbar-color: $green;
-9: 
-10: $transition: .2s ease-in-out;
-11: 
-12: $menu-width: 200px;
+/* =Navbar
+----------------------------------------------------- */
+.site-navbar {
+  display: none;
+  font-size: 14px;
+  height: 60px;
+  left: 20px;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  z-index: 11; }
 
-Backtrace:
-/Users/laurenmastroni/Code/Sites/hana-gin/sass/nav.scss:7
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:471:in `visit_variable'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:391:in `run'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/bin/sass:13:in `<top (required)>'
-/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:18:in `load'
-/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:18:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 7 of /Users/laurenmastroni/Code/Sites/hana-gin/sass/nav.scss\A \A 2: /* =Variables + Placeholder\A 3: ----------------------------------------------------- */\A 4: $toggle-stripe-2: 10px;\A 5: $toggle-stripe-3: 20px;\A 6: \A 7: $navbar-background: $white;\A 8: $navbar-color: $green;\A 9: \A 10: $transition: .2s ease-in-out;\A 11: \A 12: $menu-width: 200px;"; }
+/* =Menu
+----------------------------------------------------- */
+.site-menu {
+  background: #fff;
+  bottom: 0;
+  font-size: 14px;
+  height: 100%;
+  left: -200px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 40px;
+  position: fixed;
+  top: 0;
+  width: 200px; }
+
+.site-menu-item > a {
+  color: #1EB355;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px; }
+  .site-menu-item > a:hover, .site-menu-item > a:active {
+    color: #D61F35; }
+
+.site-menu-item.current > a {
+  color: #D61F35; }
+
+/* =Overlay toggle
+----------------------------------------------------- */
+.toggle-overlay-checkbox {
+  display: none; }
+
+.toggle-overlay-label {
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: -1; }
+
+/* Display menu overlay */
+.toggle-menu-checkbox:checked ~ .toggle-overlay-label {
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 1; }
+
+/* =Menu toggle
+----------------------------------------------------- */
+.toggle-menu-checkbox,
+.toggle-menu-label {
+  display: none; }
+
+.toggle-menu-checkbox:checked ~ .site-menu {
+  left: 0;
+  z-index: 2;
+  box-shadow: 4px 0 16px -4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 4px 0 16px -4px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 4px 0 16px -4px rgba(0, 0, 0, 0.2); }
+
+.toggle-overlay-checkbox:checked ~ .site-menu {
+  left: -200px; }
+
+.toggle-menu-label {
+  cursor: pointer;
+  display: block;
+  padding: 0 0 0 20px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none; }
+  .toggle-menu-label:before {
+    background: #1EB355;
+    content: "";
+    height: 4px;
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 2.2em;
+    box-shadow: 0 10px 0 0 #1EB355, 0 20px 0 0 #1EB355;
+    -moz-box-shadow: 0 10px 0 0 #1EB355, 0 20px 0 0 #1EB355;
+    -webkit-box-shadow: 0 10px 0 0 #1EB355, 0 20px 0 0 #1EB355; }
+  .toggle-menu-label:after {
+    color: #1EB355;
+    content: "";
+    display: inline-block;
+    line-height: 1;
+    margin-top: -9px;
+    padding-right: 1.4em;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    border-radius: 2px 2px 2px 2px; }
+
+.toggle-menu-checkbox:checked ~ .toggle-menu-label:after {
+  content: ""; }
+.toggle-menu-checkbox:checked ~ .toggle-menu-label:before {
+  background: #ccc;
+  box-shadow: 0 10px 0 0 #ccc, 0 20px 0 0 #ccc; }
+
+.nav-desktop {
+  width: 100%;
+  padding: 30px 40px;
+  position: absolute; }
+  .nav-desktop ul {
+    text-align: justify;
+    line-height: 0;
+    margin: 0;
+    padding: 0; }
+    .nav-desktop ul li {
+      display: inline-block;
+      line-height: 100%; }
+      .nav-desktop ul li a {
+        text-transform: uppercase; }
+        .nav-desktop ul li a .image-container {
+          display: block;
+          width: 120px;
+          margin: 0 auto; }
+        .nav-desktop ul li a img {
+          max-width: 120px;
+          margin-top: -20px; }
+  .nav-desktop .logo-ul {
+    text-align: center; }
+  .nav-desktop ul:after {
+    content: '';
+    display: inline-block;
+    width: 100%; }
+
+@media (max-width: 1096px) {
+  .nav-desktop ul li a {
+    font-size: 12px; } }
+@media (max-width: 1015px) {
+  .nav-desktop {
+    display: none; }
+
+  .site-navbar {
+    display: block; } }
+
+/*# sourceMappingURL=nav.css.map */

@@ -1,3 +1,9 @@
+@import 'variables';
+
+
+// **********
+// Mobile nav
+// **********
 
 /* =Variables + Placeholder
 ----------------------------------------------------- */
@@ -183,12 +189,13 @@ $menu-shadow: 4px 0 16px -4px rgba(0, 0, 0, .2);
 
 
 
-
-
+// ***********
+// Desktop nav
+// ***********
 
 .nav-desktop {
   width: 100%;
-  padding: 20px 80px;
+  padding: 30px 40px;
   position: absolute;
   ul {
     text-align: justify;
@@ -200,16 +207,42 @@ $menu-shadow: 4px 0 16px -4px rgba(0, 0, 0, .2);
       line-height: 100%;
       a {
         text-transform: uppercase;
+        .image-container {
+          display: block;
+          width: 120px;
+          margin: 0 auto;
+        }
         img {
           max-width: 120px;
+          margin-top: -20px;
         }
       }
     }
+  }
+  .logo-ul {
+    text-align: center;
   }
   ul:after {
     content: '';
     display: inline-block;
     width: 100%;
+  }
+}
+
+// *************
+// Desktop nav
+// Media queries
+// *************
+
+@media (max-width: 1096px) {
+  .nav-desktop {
+    ul {
+      li {
+        a {
+          font-size: 12px;
+        }
+      }
+    }
   }
 }
 

@@ -8485,7 +8485,7 @@ hr {
 
 .nav-desktop {
   width: 100%;
-  padding: 20px 80px;
+  padding: 30px 40px;
   position: absolute; }
   .nav-desktop ul {
     text-align: justify;
@@ -8497,13 +8497,23 @@ hr {
       line-height: 100%; }
       .nav-desktop ul li a {
         text-transform: uppercase; }
+        .nav-desktop ul li a .image-container {
+          display: block;
+          width: 120px;
+          margin: 0 auto; }
         .nav-desktop ul li a img {
-          max-width: 120px; }
+          max-width: 120px;
+          margin-top: -20px; }
+  .nav-desktop .logo-ul {
+    text-align: center; }
   .nav-desktop ul:after {
     content: '';
     display: inline-block;
     width: 100%; }
 
+@media (max-width: 1096px) {
+  .nav-desktop ul li a {
+    font-size: 12px; } }
 @media (max-width: 1015px) {
   .nav-desktop {
     display: none; }
@@ -9552,6 +9562,8 @@ hr {
       background-color: #D61F35;
       margin-left: -25px;
       margin-bottom: -33px; }
+    #panel ul li.no-stores {
+      margin-left: -30px; }
     #panel ul li.no-stores::before {
       content: '';
       background-color: transparent; }

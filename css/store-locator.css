@@ -27,6 +27,8 @@
       background-color: #D61F35;
       margin-left: -25px;
       margin-bottom: -33px; }
+    #panel ul li.no-stores {
+      margin-left: -30px; }
     #panel ul li.no-stores::before {
       content: '';
       background-color: transparent; }
