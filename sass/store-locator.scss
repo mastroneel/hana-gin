@@ -7,19 +7,23 @@
 #map-canvas {
   width: 90%;
   margin-left: 70px;
+  margin-top: -80px;
 }
 
 #panel {
   width: 500px;
   margin: 0 auto;
   text-align: left;
+  h4 {
+    // position: absolute;
+  }
   ul {
     list-style: none;
     li {
       color: $white;
       font-size: 18px;
       text-align: left;
-      margin-top: 30px;
+      margin-top: 20px;
     }
     li::before{
        content: '';
@@ -55,6 +59,8 @@
   border-radius: 3px;
   color: $red;
   padding-left: 8px;
+  // position: absolute;
+  // margin-top: 37px;
   &:focus {
     outline: none;
   }
@@ -122,6 +128,17 @@ input.directions-to {
   color: grey;
 }
 
+.store-list {
+  display: grid;
+  overflow: hidden;
+  // margin-top: 60px;
+  // height: 1400px;
+}
+.storelocator-filter {
+  position: absolute;
+  margin-top: -90px
+}
+
 .store {
   .title {
     padding-top: 5px;
@@ -154,14 +171,25 @@ input.directions-to {
 
 @media (max-width: 987px) {
   #map-canvas {
-    margin: 0 auto;
+    margin: -80px auto 0 auto;
   }
 }
+
+@media (min-width: 767px) {
+  #panel {
+    max-height: 420px;
+  }
+}
+
 
 @media (max-width: 767px) {
   #map-canvas {
     width: 60%;
     height: 400px;
+  }
+  .storelocator-filter {
+    position: static;
+    margin-top: 10px;
   }
   .show-more {
     display: block;
@@ -173,10 +201,11 @@ input.directions-to {
     width: 170px;
   }
   #panel.tall {
-    height: 1500px;
+    height: 1450px;
   }
   #panel {
     margin-top: 40px;
+    height: 575px;
     li.store:nth-of-type(4),
     li.store:nth-of-type(5),
     li.store:nth-of-type(6),

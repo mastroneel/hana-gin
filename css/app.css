@@ -9516,7 +9516,7 @@ hr {
   background-repeat: no-repeat;
   background-attachment: fixed; }
   .location .location-title {
-    margin-bottom: 40px; }
+    margin-bottom: 110px; }
   .location hr {
     width: 28em; }
 
@@ -9538,7 +9538,8 @@ hr {
 
 #map-canvas {
   width: 90%;
-  margin-left: 70px; }
+  margin-left: 70px;
+  margin-top: -80px; }
 
 #panel {
   width: 500px;
@@ -9550,7 +9551,7 @@ hr {
       color: #fff;
       font-size: 18px;
       text-align: left;
-      margin-top: 30px; }
+      margin-top: 20px; }
     #panel ul li::before {
       content: '';
       display: inline-block;
@@ -9630,6 +9631,14 @@ input.directions-to {
 .storelocator-panel .store-list .no-stores {
   color: grey; }
 
+.store-list {
+  display: grid;
+  overflow: hidden; }
+
+.storelocator-filter {
+  position: absolute;
+  margin-top: -90px; }
+
 .store .title {
   padding-top: 5px; }
 
@@ -9648,11 +9657,18 @@ input.directions-to {
     width: 280px; } }
 @media (max-width: 987px) {
   #map-canvas {
-    margin: 0 auto; } }
+    margin: -80px auto 0 auto; } }
+@media (min-width: 767px) {
+  #panel {
+    max-height: 420px; } }
 @media (max-width: 767px) {
   #map-canvas {
     width: 60%;
     height: 400px; }
+
+  .storelocator-filter {
+    position: static;
+    margin-top: 10px; }
 
   .show-more {
     display: block;
@@ -9664,10 +9680,11 @@ input.directions-to {
     width: 170px; }
 
   #panel.tall {
-    height: 1500px; }
+    height: 1450px; }
 
   #panel {
-    margin-top: 40px; }
+    margin-top: 40px;
+    height: 575px; }
     #panel li.store:nth-of-type(4),
     #panel li.store:nth-of-type(5),
     #panel li.store:nth-of-type(6),
