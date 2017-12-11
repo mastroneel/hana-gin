@@ -8359,6 +8359,25 @@ hr {
       margin-top: -3px; }
     .agemodal .message .message-inner form .formsubmit {
       font-size: 14px; } }
+.scroll-to-top {
+  display: none;
+  height: 50px;
+  width: 50px;
+  background-color: #1EB355;
+  border: 1px solid #1EB355;
+  border-radius: 50%;
+  text-align: center;
+  z-index: 1000;
+  position: fixed;
+  bottom: 25px;
+  right: 20px;
+  color: #fff; }
+  .scroll-to-top:hover {
+    color: #fff; }
+  .scroll-to-top i {
+    font-size: 24px;
+    padding-top: 10px; }
+
 /* =Variables + Placeholder
 ----------------------------------------------------- */
 .site-menu, .toggle-overlay-label {

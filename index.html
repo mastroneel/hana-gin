@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -327,6 +328,22 @@
         </div>
       </div>
     </div>
+
+    <!-- scroll to top button and script -->
+    <div>
+      <a id="toTop" class="scroll-to-top" href="#home"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+    </div>
+
+    <script>
+      $(window).scroll(function() {
+          if ($(this).scrollTop()) {
+              $('#toTop').fadeIn();
+          } else {
+              $('#toTop').fadeOut();
+          }
+      });
+    </script>
+    <!-- end of scroll to top button and script -->
 
     <!-- Nav link scroll point -->
     <a name="our-story"></a>
@@ -1458,7 +1475,7 @@
       </div>
       <div class="row">
         <div class="col-xs-12 col-sm-6">
-          <form action="https://formspree.io/hana@brandedspiritsusa.com" method="POST">
+          <form action="php/mail_handler.php" method="post">
             <h3>Send us a message below...</h3>
             <p>Your Name*</p>
             <input type="text" name="name">
@@ -1466,20 +1483,20 @@
             <input type="text" name="company">
             <p>Company Type*</p>
             <select class="small-input" name="companytype">
-              <option value="">Retailer</option>
-              <option value="">Distributor</option>
-              <option value="">Individual/Customer</option>
-              <option value="">Press/Media</option>
-              <option value="">Other</option>
+              <option value="Retailer">Retailer</option>
+              <option value="Distributor">Distributor</option>
+              <option value="Individual/Customer">Individual/Customer</option>
+              <option value="Press/Media">Press/Media</option>
+              <option value="Other">Other</option>
             </select>
             <p>Email Address*</p>
-            <input type="email" name="_replyto">
+            <input type="text" name="email">
             <p>Phone Number*</p>
             <input type="tel" name="phone">
             <p>Message*</p>
             <input type="text" name="message">
             <div class="button-container">
-              <button class="button" type="submit" name="submit" target="_blank">Submit</button>
+              <button class="button" type="submit" name="submit">Submit</button>
             </div>
           </form>
         </div>

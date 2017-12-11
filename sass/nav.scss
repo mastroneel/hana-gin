@@ -1,5 +1,40 @@
 @import 'variables';
 
+// ********************
+// Scroll to top button
+// ********************
+
+.scroll-to-top {
+  display: none;
+  height: 50px;
+  width: 50px;
+  background-color: $green;
+  border: 1px solid $green;
+  border-radius: 50%;
+  text-align: center;
+  z-index: 1000;
+  position: fixed;
+  bottom: 25px;
+  right: 20px;
+  color: #fff;
+  &:hover {
+    color: #fff;
+  }
+  i {
+    font-size: 24px;
+    padding-top: 10px;
+  }
+}
+
+// @media (max-width: 600px) {
+//   .scroll-to-top {
+//     display: block;
+//     color: #fff;
+//   }
+// }
+
+
+
 
 // **********
 // Mobile nav
