@@ -10,6 +10,7 @@ footer {
     footer p a:hover {
       text-decoration: underline; }
   footer .facebook {
-    font-size: 28px; }
+    font-size: 28px;
+    margin: 5px; }
 
 /*# sourceMappingURL=footer.css.map */
