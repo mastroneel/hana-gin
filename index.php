@@ -1,5 +1,9 @@
 <?php
-if(isset($_POST['submit'])){
+
+if(isset($_POST['submit']) == ''){
+
+}
+else{
     $to = "hana@brandedspiritsusa.com"; // this is your Email address
     $from = $_POST['email']; // this is the sender's Email address
     $name = $_POST['name'];
@@ -23,6 +27,7 @@ if(isset($_POST['submit'])){
     // You can also use header('Location: thank_you.php'); to redirect to another page.
     // You cannot use header and echo together. It's one or the other.
     }
+
 ?>
 
 
@@ -1510,7 +1515,7 @@ if(isset($_POST['submit'])){
             <input type="text" name="company">
             <p>Company Type*</p>
             <select class="small-input" name="companytype">
-              <option value="" selected="selected"></option>
+              <option value="" selected="selected">Select</option>
               <option value="Retailer">Retailer</option>
               <option value="Distributor">Distributor</option>
               <option value="Individual/Customer">Individual/Customer</option>
