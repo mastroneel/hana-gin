@@ -1476,33 +1476,42 @@
       </div>
       <div class="row">
         <div class="col-xs-12 col-sm-6">
-          <form action="php/mail_handler.php" method="post">
-            <h3>Send us a message below...</h3>
+          <form action="php/mail_handler.php" method="POST">
             <p>Your Name*</p>
-            <input type="text" name="name">
+            <input type="text" name="name" value="" />
             <p>Company Name*</p>
-            <input type="text" name="company">
+            <input type="text" name="company" value="" />
             <p>Company Type*</p>
-            <select class="small-input" name="companytype">
-              <option value="" selected="selected">Select</option>
-              <option value="Retailer">Retailer</option>
-              <option value="Distributor">Distributor</option>
-              <option value="Individual/Customer">Individual/Customer</option>
-              <option value="Press/Media">Press/Media</option>
-              <option value="Other">Other</option>
+            <select class="small-input" name="companytype" value="">
+                <option value="" selected="selected">Select</option>
+                <option value="Retailer">Retailer</option>
+                <option value="Distributor">Distributor</option>
+                <option value="Individual/Customer">Individual/Customer</option>
+                <option value="Press/Media">Press/Media</option>
+                <option value="Other">Other</option>
             </select>
             <p>Email Address*</p>
-            <input type="text" name="email">
+            <input type="text" name="email" value="" />
             <p>Phone Number*</p>
-            <input type="tel" name="phone">
+            <input type="tel" name="phone" value="" />
             <p>Message*</p>
             <input type="text" name="message">
             <p></p>
             <div class="g-recaptcha" data-sitekey="6Ldyk0wUAAAAAMYGyuIrI-pGxlHpgseVDDEPWg36"></div>
-            <div class="button-container">
-              <button class="button" type="submit" name="submit">Submit</button>
-            </div>
-          </form>
+            <p></p>
+            <input class="submit-button" type="submit" name="submit" value="submit">
+        </form>
+        <style>
+        .contact input.submit-button {
+          border: 3px solid #D61F35;
+          border-radius: 3px;
+          /* padding: 20px 40px; */
+          background: 0 0;
+          color: #1EB355;
+          font-family: 'AvenirNext', sans-serif;
+          text-transform: uppercase;
+        }
+        </style>
         </div>
         <div class="col-xs-12 col-sm-4 address">
           <h3>Address</h3>
